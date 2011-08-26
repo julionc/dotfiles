@@ -29,3 +29,6 @@ source $ZSH/oh-my-zsh.sh
 
 for conf (~/.zsh/conf.d/*(N.)) source $conf
 for func (~/.zsh/func.d/*(N.)) autoload -U ${func:t}
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
