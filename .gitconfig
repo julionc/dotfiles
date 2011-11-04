@@ -8,7 +8,7 @@
 	co = checkout
 	count = shortlog
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
-	st = =
+	st = status
 [color]
 	diff = auto
 	status = auto
