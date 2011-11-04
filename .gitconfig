@@ -4,7 +4,7 @@
 [alias]
 	a = add
 	br = branch
-	ci = commit
+	ci = commit -m
 	co = checkout
 	count = shortlog
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
