@@ -4,12 +4,12 @@
 
 [alias]
     a = add
-    br = branch
-    ci = commit
-    co = checkout
+	br = branch
+	ci = commit
+	co = checkout
     count = shortlog -sn
     ll = log --pretty=oneline --abbrev-commit --max-count=15
-    st = status
+    st = status	
 
 [color]
     diff = auto
