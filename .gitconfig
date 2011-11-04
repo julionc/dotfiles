@@ -1,17 +1,15 @@
 [user]
-    name = Julio Napurí
-    email = julionc@gmail.com
-
+	name = Julio Napurí
+	email = julionc@gmail.com
 [alias]
-    a = add
+	a = add
 	br = branch
 	ci = commit
 	co = checkout
-    count = shortlog -sn
-    ll = log --pretty=oneline --abbrev-commit --max-count=15
-    st = status	
-
+	count = shortlog
+	ll = log --pretty=oneline --abbrev-commit --max-count=15
+	st = =
 [color]
-    diff = auto
-    status = auto
-    branch = auto
+	diff = auto
+	status = auto
+	branch = auto
