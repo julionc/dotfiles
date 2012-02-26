@@ -1,6 +1,8 @@
 [user]
 	name = Julio Napurí
 	email = julionc@gmail.com
+[core]
+	editor = vim
 [alias]
 	a = add
 	br = branch
