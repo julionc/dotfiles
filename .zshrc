@@ -32,3 +32,9 @@ for func (~/.zsh/func.d/*(N.)) autoload -U ${func:t}
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+PATH=$PATH:$HOME/.bin # Personal .bin/
+
+source .zsh_private

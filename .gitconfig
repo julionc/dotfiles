@@ -15,3 +15,5 @@
 	diff = auto
 	status = auto
 	branch = auto
+[github]
+	user = julionc
