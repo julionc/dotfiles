@@ -37,6 +37,10 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=$PATH:$HOME/.bin # Personal .bin/
 
+# NVM
 source ~/nvm/nvm.sh
 
+# Global variables
+export EDITOR=vim
+# o.O
 source ~/.dotfiles/.zsh_private
