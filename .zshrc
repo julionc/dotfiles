@@ -37,10 +37,13 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 PATH=$PATH:$HOME/.bin # Personal .bin/
 
+# Play Framework
+PATH=$PATH:$HOME/play/
+
 # NVM
 source ~/nvm/nvm.sh
 
 # Global variables
 export EDITOR=vim
 # o.O
-source ~/.dotfiles/.zsh_private
+#source ~/.dotfiles/.zsh_private

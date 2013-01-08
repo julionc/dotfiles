@@ -18,3 +18,5 @@
 	branch = auto
 [github]
 	user = julionc
+[push]
+	default = simple
