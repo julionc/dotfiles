@@ -1,0 +1,20 @@
+#
+# Environment
+#
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# NVM
+source ~/nvm/nvm.sh
+
+#
+# Variables
+#
+
+export EDITOR=vim
+export VISUAL=subl
+
+# vim: set ft=zsh:
