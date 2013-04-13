@@ -13,4 +13,11 @@ source $ZSH/$ZSH_FRAMEWORK/.zshrc
 for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
 #for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# zsh_private
+if [ -e "$HOME/.zsh_private" ]; then
+  source "$HOME/.zsh_private"
+fi
+
 # vim: set ft=zsh:
