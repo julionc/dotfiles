@@ -27,10 +27,10 @@ brew install ack
 #brew install exiv2
 #brew install git
 #brew install imagemagick
-brew install pigz
+#brew install pigz
 #brew install rename
 brew install tree
-#brew install webkit2png
+brew install webkit2png
 #brew install zopfli
 
 # Install native apps
@@ -45,17 +45,18 @@ function installcask() {
 	fi
 }
 
-installcask dropbox
+#installcask virtualbox
+#installcask dropbox
 installcask google-chrome
 installcask google-chrome-canary
-#installcask imagealpha
-#installcask imageoptim
 installcask iterm2
 installcask macvim
 installcask sublime-text
-installcask the-unarchiver
-installcask tor-browser
-#installcask virtualbox
+installcask alfred
+installcask skype
+
+#installcask the-unarchiver
+
 #installcask vlc
 
 # Remove outdated versions from the cellar
