@@ -19,6 +19,7 @@ brew install git
 brew install heroku-toolbelt
 brew install rename
 brew install tree
+brew install ctags
 
 # Install Native apps with Brew Cask
 brew tap phinze/homebrew-cask
