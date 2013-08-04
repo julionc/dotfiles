@@ -1,0 +1,3 @@
+
+$('.bgmodal').hide();
+$('.bgtransparent').hide();
