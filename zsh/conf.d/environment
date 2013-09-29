@@ -1,15 +1,12 @@
 #
-# Environment
-#
-
-# NVM
-#source ~/nvm/nvm.sh
-
-#
 # Variables
 #
 
 export EDITOR=vim
 export VISUAL=subl
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # vim: set ft=zsh:
