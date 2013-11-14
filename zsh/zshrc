@@ -1,13 +1,5 @@
-# Path to your ZSH Custom folder configuration.
-ZSH=$HOME/.dotfiles/zsh
 
-# Set name of the ZSH Framework to load.
-# Look in ~/.dotfiles/zsh
-
-#ZSH_FRAMEWORK="oh-my-zsh"
-ZSH_FRAMEWORK="prezto"
-
-source $ZSH/$ZSH_FRAMEWORK/.zshrc
+source ~/.dotfiles/zsh/prezto.zsh
 
 # Customize to your needs...
 for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
@@ -17,5 +9,3 @@ for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
 if [ -e "$HOME/.zsh_private" ]; then
   source "$HOME/.zsh_private"
 fi
-
-# vim: set ft=zsh:
