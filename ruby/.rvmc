@@ -1,4 +1,0 @@
-#export rvm_project_rvmrc=0
-
-#pretty colors
-export rvm_pretty_print_flag=1

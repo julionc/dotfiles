@@ -13,8 +13,8 @@ alias vv='v -c "EditConfig"'
 alias b='brew'
 
 # Make head/tail output fill screen
-alias head='head -n $((LINES-2))'
-alias tail='tail -n $((LINES-2))'
+#alias head='head -n $((LINES-2))'
+#alias tail='tail -n $((LINES-2))'
 
 # global {{{1
 
