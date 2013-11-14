@@ -20,21 +20,9 @@ brew install heroku-toolbelt
 brew install rename
 brew install tree
 brew install ctags
+brew install zsh
+brew install ruby-build
+brew install rbenv
 
-# Install Native apps with Brew Cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
-#brew cask install virtualbox
-#brew cask install dropbox
-brew cask install skype
-
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install iterm2
-brew cask install macvim
-brew cask install sublime-text
-brew cask install alfred
-
-# Remove outdated versions from the cellar
+# Remove outdated versions from the Cellar
 brew cleanup
