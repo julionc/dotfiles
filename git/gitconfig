@@ -3,6 +3,7 @@
 	email = julionc@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [alias]
 	a = add
 	br = branch
