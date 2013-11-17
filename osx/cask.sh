@@ -11,19 +11,21 @@ brew cask install sublime-text
 brew cask install postgres
 brew cask install robomongo
 
+# Virtualization
+brew cask install virtualbox
+brew cask install vagrant
+
 # Productivity
 brew cask install alfred
 
 # Everything Else
-brew cask install transmission
-brew cask install jdownloader
+brew cask install dropbox
 brew cask install google-chrome
 #brew cask install google-chrome-canary
-brew cask install virtualbox
-brew cask install dropbox
+brew cask install jdownloader
+brew cask install transmission
 brew cask install skype
 brew cask install vlc
-
 
 # Remove outdated versions from the Cellar
 brew cleanup
