@@ -16,6 +16,7 @@ brew install wget --enable-iri
 # Install Packages
 brew install ack
 brew install git
+brew install git-extras
 brew install heroku-toolbelt
 brew install rename
 brew install tree

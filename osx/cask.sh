@@ -10,6 +10,7 @@ brew cask install macvim
 brew cask install sublime-text
 brew cask install postgres
 brew cask install robomongo
+brew cask install sourcetree
 
 # Virtualization
 brew cask install virtualbox
