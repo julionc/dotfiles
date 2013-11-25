@@ -18,6 +18,7 @@ brew cask install vagrant
 
 # Productivity
 brew cask install alfred
+brew cask install evernote
 
 # Everything Else
 brew cask install dropbox
