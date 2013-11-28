@@ -1,8 +1,9 @@
-
-source ~/.dotfiles/zsh/prezto.zsh
+source ~/.dotfiles/zsh/conf.d/prezto.zsh
+source ~/.dotfiles/zsh/conf.d/environment.zsh
+source ~/.dotfiles/zsh/aliases.d/general.zsh
 
 # Customize to your needs...
-for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
+#for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
 #for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
 
 # zsh_private
