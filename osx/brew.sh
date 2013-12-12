@@ -22,8 +22,8 @@ brew install rename
 brew install tree
 brew install ctags
 brew install zsh
-brew install ruby-build
 brew install rbenv
+brew install ruby-build
 
 # Remove outdated versions from the Cellar
 brew cleanup
