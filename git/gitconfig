@@ -13,6 +13,8 @@
 	st = status -sb
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lock = update-index --skip-worktree
+	unlock = update-index --no-skip-worktree
 [color]
 	diff = auto
 	status = auto
