@@ -9,8 +9,10 @@ brew cask install iterm2
 brew cask install macvim
 brew cask install sublime-text
 brew cask install postgres
+brew cask install pgadmin3
 brew cask install robomongo
 brew cask install sourcetree
+brew cask install light-table
 
 # Virtualization
 brew cask install virtualbox
