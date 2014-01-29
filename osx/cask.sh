@@ -23,11 +23,13 @@ brew cask install alfred
 brew cask install evernote
 
 # Everything Else
+brew cask install caffeine
 brew cask install dropbox
 brew cask install google-chrome
-#brew cask install google-chrome-canary
 brew cask install jdownloader
 brew cask install transmission
+brew cask install rdio
+brew cask install rescuetime
 brew cask install skype
 brew cask install vlc
 
