@@ -25,5 +25,9 @@ brew install zsh
 brew install rbenv
 brew install ruby-build
 
+# Install Binary apps with homebrew-binary
+brew tap homebrew/binary
+brew install docker
+
 # Remove outdated versions from the Cellar
 brew cleanup
