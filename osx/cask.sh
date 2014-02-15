@@ -12,7 +12,6 @@ brew cask install postgres
 brew cask install pgadmin3
 brew cask install robomongo
 brew cask install sourcetree
-brew cask install light-table
 
 # Virtualization
 brew cask install virtualbox
@@ -32,6 +31,10 @@ brew cask install rdio
 brew cask install rescuetime
 brew cask install skype
 brew cask install vlc
+
+# Games
+brew cask install minecraft
+brew cask install teeworlds
 
 # Remove outdated versions from the Cellar
 brew cleanup
