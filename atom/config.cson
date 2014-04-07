@@ -1,7 +1,8 @@
-'editor':
-  'fontSize': 16
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'atom-dark-syntax'
-  ]
+'exception-reporting':
+  'userId': '14026dc0-1e6a-d53b-4d25-55c8e025d67e'
+'release-notes':
+  'viewedVersion': '0.84.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '821c199241e12305ce68eb33849c4e1c42b90faa'
