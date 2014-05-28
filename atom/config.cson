@@ -6,3 +6,14 @@
   'showOnStartup': false
 'metrics':
   'userId': '821c199241e12305ce68eb33849c4e1c42b90faa'
+'core':
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+  ]
+  'themes': [
+    'atom-light-ui'
+    'atom-light-syntax'
+  ]
+'editor': {}
