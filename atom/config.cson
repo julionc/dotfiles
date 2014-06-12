@@ -16,4 +16,5 @@
     'atom-dark-ui'
     'solarized-dark-syntax'
   ]
-'editor': {}
+'editor':
+  'fontSize': 14
