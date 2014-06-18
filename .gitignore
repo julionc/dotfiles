@@ -3,3 +3,5 @@
 *.swp
 .zsh_private
 
+# atom
+atom/compile-cache/
