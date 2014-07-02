@@ -14,7 +14,7 @@
   ]
   'themes': [
     'atom-dark-ui'
-    'solarized-dark-syntax'
+    'monokai'
   ]
 'editor':
   'fontSize': 14
