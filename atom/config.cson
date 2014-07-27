@@ -13,8 +13,8 @@
     '.DS_Store'
   ]
   'themes': [
-    'atom-dark-ui'
-    'monokai'
+    'seti-ui'
+    'seti-syntax'
   ]
 'editor':
   'fontSize': 14
