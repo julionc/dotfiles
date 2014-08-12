@@ -7,4 +7,4 @@ function heroku_install() {
 # Plugins
 heroku_install 'tpope/heroku-fucking-console'
 heroku_install 'tpope/heroku-pgbackups-pull'
-heroku_install 'tpope/heroku-accounts' #take care
+heroku_install 'ddollar/heroku-accounts'
