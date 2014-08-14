@@ -11,6 +11,7 @@ brew cask install macvim
 brew cask install postgres
 brew cask install pgadmin3
 brew cask install robomongo
+brew cask install rubymine
 brew cask install sourcetree
 brew cask install sublime-text
 
@@ -21,6 +22,7 @@ brew cask install vagrant
 # Productivity
 brew cask install alfred
 brew cask install evernote
+brew cask install spectacle
 
 # Everything Else
 brew cask install caffeine
