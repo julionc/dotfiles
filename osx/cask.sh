@@ -29,16 +29,20 @@ brew cask install caffeine
 brew cask install dropbox
 brew cask install dash
 brew cask install google-chrome
+brew cask install gyazo
 brew cask install jdownloader
 brew cask install transmission
-brew cask install rdio
 brew cask install rescuetime
 brew cask install skype
+brew cask install osxfuse
+
+# Media
+brew cask install rdio
 brew cask install spotify
-brew cask install steam
 brew cask install vlc
 
 # Games
+brew cask install steam
 brew cask install minecraft
 brew cask install teeworlds
 
