@@ -26,10 +26,6 @@ brew install zsh
 brew install rbenv
 brew install ruby-build
 
-# RSS Readers
-brew install quiterss
-brew install vienna
-
 # Install Binary apps with homebrew-binary
 brew tap homebrew/binary
 brew install docker
