@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-# Install Native apps with Brew Cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
+# Virtualization
+brew cask install virtualbox
+brew cask install vagrant
+
+# Essential
+brew cask install alfred
+brew cask install caffeine
+
+# Music
+brew cask install spotify
 
 # Programming
 brew cask install github
@@ -15,12 +22,7 @@ brew cask install rubymine
 brew cask install sourcetree
 brew cask install sublime-text
 
-# Virtualization
-brew cask install virtualbox
-brew cask install vagrant
-
 # Productivity
-brew cask install alfred
 brew cask install evernote
 brew cask install spectacle
 
@@ -30,16 +32,11 @@ brew cask install dropbox
 brew cask install dash
 brew cask install google-chrome
 brew cask install gyazo
-brew cask install jdownloader
+#brew cask install jdownloader
 brew cask install transmission
 brew cask install rescuetime
 brew cask install skype
 brew cask install osxfuse
-
-# Media
-brew cask install rdio
-brew cask install spotify
-brew cask install vlc
 
 # Games
 brew cask install steam

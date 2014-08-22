@@ -31,5 +31,8 @@ brew tap homebrew/binary
 brew install docker
 brew install packer
 
+# Install Native apps with Brew Cask
+brew install caskroom/cask/brew-cask
+
 # Remove outdated versions from the Cellar
 brew cleanup
