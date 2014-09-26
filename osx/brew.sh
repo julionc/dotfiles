@@ -25,6 +25,7 @@ brew install tree
 brew install zsh
 brew install rbenv
 brew install ruby-build
+brew install wireshark --with-qt
 
 # Install Binary apps with homebrew-binary
 brew tap homebrew/binary
