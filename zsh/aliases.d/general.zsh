@@ -158,4 +158,8 @@ alias aptdu='sudo apt-get dist-upgrade'
 
 #}}}
 
+# Mac OSX
+alias brew-upgrade='brew update && brew upgrade'
+alias cask='brew cask'
+
 # vim: set ft=zsh:
