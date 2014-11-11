@@ -82,13 +82,13 @@ alias llabig='lla -S *(D.OL[1,10])'          # Show biggest files
 # git {{{1
 
 alias g='git'
-alias ga='g add'
-alias gP='g push'
-alias gc='g commit'
-alias gd='g diff'
-alias gp='g pull'
-alias gs='g status'
-alias gl='g log --oneline'
+alias gad='git add'
+alias gP='git push'
+alias gci='git commit'
+alias giff='git diff'
+alias gp='git pull'
+alias gst='git st'
+alias gl='git log --oneline'
 
 if [[ $OSTYPE == darwin* ]]; then
     alias gg='gitx --all'
