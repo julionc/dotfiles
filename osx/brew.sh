@@ -15,6 +15,7 @@ brew install wget --enable-iri
 
 # Install Packages
 brew install ack
+brew install autojump
 brew install ctags
 brew install git
 brew install git-extras
