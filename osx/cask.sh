@@ -31,9 +31,11 @@ brew cask install spectacle
 brew cask install caffeine
 brew cask install dropbox
 brew cask install dash
+brew cask install firefox
+brew cask install firefoxdeveloperedition
 brew cask install google-chrome
 brew cask install gyazo
-#brew cask install jdownloader
+brew cask install jdownloader
 brew cask install transmission
 brew cask install rescuetime
 brew cask install skype

@@ -36,5 +36,8 @@ brew install packer
 # Install Native apps with Brew Cask
 brew install caskroom/cask/brew-cask
 
+# Install Alternative versions of Cask
+brew tap caskroom/versions
+
 # Remove outdated versions from the Cellar
 brew cleanup
