@@ -27,13 +27,16 @@ brew cask install sublime-text
 brew cask install evernote
 brew cask install spectacle
 
+# Browsers
+brew cask install google-chrome
+brew cask install epic
+brew cask install firefox
+brew cask install firefoxdeveloperedition
+
 # Everything Else
 brew cask install caffeine
 brew cask install dropbox
 brew cask install dash
-brew cask install firefox
-brew cask install firefoxdeveloperedition
-brew cask install google-chrome
 brew cask install gyazo
 brew cask install jdownloader
 brew cask install transmission
