@@ -11,6 +11,7 @@ brew cask install caffeine
 
 # Music
 brew cask install spotify
+brew cask install spotifree
 
 # Programming
 brew cask install github
@@ -39,6 +40,7 @@ brew cask install dropbox
 brew cask install dash
 brew cask install gyazo
 brew cask install jdownloader
+brew cask install flash
 brew cask install transmission
 brew cask install rescuetime
 brew cask install skype
@@ -48,6 +50,10 @@ brew cask install osxfuse
 brew cask install steam
 brew cask install minecraft
 brew cask install teeworlds
+
+# Java & Android
+brew cask install java
+brew cask install android-studio
 
 # Remove outdated versions from the Cellar
 brew cleanup
