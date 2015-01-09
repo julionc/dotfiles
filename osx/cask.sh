@@ -23,6 +23,7 @@ brew cask install robomongo
 brew cask install rubymine
 brew cask install sourcetree
 brew cask install sublime-text
+brew cask install sequel-pro
 
 # Productivity
 brew cask install evernote
