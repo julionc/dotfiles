@@ -12,4 +12,6 @@ Xcode
 
 ### ZSH
 
+`chsh -s /usr/local/bin/zsh`
+
 [Prezto](https://github.com/sorin-ionescu/prezto)
