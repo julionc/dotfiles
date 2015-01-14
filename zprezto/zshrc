@@ -1,15 +1,13 @@
-source ~/.dotfiles/zsh/conf.d/prezto.zsh
-source ~/.dotfiles/zsh/conf.d/environment.zsh
-source ~/.dotfiles/zsh/aliases.d/general.zsh
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-# Customize to your needs...
-#for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
-#for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
-
-# zsh_private
-if [ -e "$HOME/.zsh_private" ]; then
-  source "$HOME/.zsh_private"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# AutoJump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# Customize to your needs...
