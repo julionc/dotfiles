@@ -1,0 +1,17 @@
+#  ~/.zshrc
+
+source ~/.dotfiles/zprezto/zshrc
+source ~/.dotfiles/zsh/conf.d/environment.zsh
+source ~/.dotfiles/zsh/aliases.d/general.zsh
+
+# Customize to your needs...
+# #for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
+# #for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
+
+# zsh_private
+if [ -e "$HOME/.zsh_private" ]; then
+	source "$HOME/.zsh_private"
+fi
+
+# AutoJump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
