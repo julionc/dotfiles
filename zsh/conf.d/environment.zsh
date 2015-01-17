@@ -1,6 +1,6 @@
 
 export EDITOR=vim
-export VISUAL=subl
+export VISUAL=vim
 
 # rbenv
 if [ -d "$HOME/.rbenv" ] ; then
@@ -8,14 +8,8 @@ if [ -d "$HOME/.rbenv" ] ; then
 	eval "$(rbenv init -)"
 fi
 
+# NVM
 if [[ -s "$HOME/.nvm/nvm.sh" ]]; then
 	source "$HOME/.nvm/nvm.sh"
 	export NVM_DIR=~/.nvm
 fi
-
-
-#[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh  # This loads NVM
-
-#source $(brew --prefix nvm)/nvm.sh
-#export NVM_DIR=~/.nvm
-
