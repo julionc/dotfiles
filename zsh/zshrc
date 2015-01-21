@@ -8,5 +8,6 @@ for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
 for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
 for func (~/.dotfiles/zsh/private.d/*(N.)) autoload -U ${func:t}
 
-# AutoJump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+osName=`uname -s | tr "[:upper:]" "[:lower:]"`
+source ~/.dotfiles/zsh/aliases.d/$osName.zsh
+
