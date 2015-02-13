@@ -30,22 +30,28 @@ brew cask install evernote
 brew cask install spectacle
 
 # Browsers
-brew cask install google-chrome
 brew cask install epic
+brew cask install google-chrome
 brew cask install firefox
 brew cask install firefoxdeveloperedition
 
 # Everything Else
 brew cask install caffeine
-brew cask install dropbox
 brew cask install dash
+brew cask install dropbox
+brew cask install flash
 brew cask install gyazo
 brew cask install jdownloader
-brew cask install flash
-brew cask install transmission
+brew cask install osxfuse
 brew cask install rescuetime
 brew cask install skype
-brew cask install osxfuse
+brew cask install transmission
+
+# Privacy
+brew cask install cyberghost
+brew cask install macpass
+brew cask install keepassx
+brew cask install tunnelblick
 
 # Games
 brew cask install steam
