@@ -10,6 +10,8 @@ Xcode
 
 [Homebrew Cask](http://caskroom.io)
 
+[Homebrew Cask Versions](https://github.com/caskroom/homebrew-versions)
+
 ### ZSH
 
 `chsh -s /usr/local/bin/zsh`
