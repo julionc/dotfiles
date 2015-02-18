@@ -51,6 +51,7 @@ brew cask install transmission
 brew cask install cyberghost
 brew cask install macpass
 brew cask install keepassx
+brew cask install tunnelbear
 brew cask install tunnelblick
 
 # Games

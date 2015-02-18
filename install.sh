@@ -7,5 +7,5 @@ ln -sf ~/.dotfiles/zprezto/zshenv ~/.zshenv
 ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
 
 # Git
-ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
-ln -sf ~/.dotfiles/gitignore_global ~/.gitignore_global
+ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
