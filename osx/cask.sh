@@ -6,7 +6,6 @@ brew cask install vagrant
 brew cask install chefdk
 
 # Essential
-brew cask install alfred
 brew cask install caffeine
 
 # Music
