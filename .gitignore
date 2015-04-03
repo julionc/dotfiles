@@ -1,9 +1,5 @@
 .DS_Store
 *~
 *.swp
-
 # zsh
 zsh/private.d/**
-
-# atom
-atom/compile-cache/
