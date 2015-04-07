@@ -1,4 +1,3 @@
-
 export EDITOR=vim
 export VISUAL=vim
 
@@ -8,7 +7,7 @@ if [ -d "$HOME/.rbenv" ] ; then
 	eval "$(rbenv init -)"
 fi
 
-# NVM
+# nvm
 if [[ -s "$HOME/.nvm" ]]; then
 	if [[ "$(uname)" == "Darwin" ]]; then
 		source "/usr/local/opt/nvm/nvm.sh"
@@ -17,4 +16,10 @@ if [[ -s "$HOME/.nvm" ]]; then
 		source "$HOME/.nvm/nvm.sh"
 		export NVM_DIR=~/.nvm
 	fi
+fi
+
+# jenv
+if [[ -s "$HOME/.jenv" ]]; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
 fi

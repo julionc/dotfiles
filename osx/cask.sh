@@ -58,9 +58,5 @@ brew cask install steam
 brew cask install minecraft
 brew cask install teeworlds
 
-# Java & Android
-brew cask install java7
-brew cask install android-studio
-
 # Remove outdated versions from the Cellar
 brew cleanup
