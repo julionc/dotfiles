@@ -6,7 +6,6 @@ source ~/.dotfiles/zsh/aliases.d/general.zsh
 source ~/.dotfiles/zsh/functions.zsh
 
 for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
-for func (~/.dotfiles/zsh/func.d/*(N.)) autoload -U ${func:t}
 for func (~/.dotfiles/zsh/private.d/*(N.)) autoload -U ${func:t}
 
 osName=`uname -s | tr "[:upper:]" "[:lower:]"`

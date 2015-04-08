@@ -4,6 +4,7 @@ alias mkdir='mkdir -p'
 alias mmv='noglob zmv -W'
 alias grep='grep -I --color=auto'
 alias myip='curl http://ifconfig.me/ip'
+alias myip2='curl -s https://secure.internode.on.net/webtools/showmyip\?textonly=1'
 alias po=popd
 alias pu=pushd
 alias tree='tree --noreport --dirsfirst -F'
