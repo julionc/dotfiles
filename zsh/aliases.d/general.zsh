@@ -141,9 +141,9 @@ alias apts='apt-cache search'
 alias aptup='sudo apt-get update'
 alias aptdu='sudo apt-get dist-upgrade'
 
-# alias dpl='dpkg -l'       # List
-# alias dpi='sudo dpkg -i'  # Install
-# alias dpr='sudo dpkg -r'  # Remove
+alias dpl='dpkg -l'       # List
+alias dpi='sudo dpkg -i'  # Install
+alias dpr='sudo dpkg -r'  # Remove
 
 # alias apt='aptitude'
 # alias apts='aptitude search'
