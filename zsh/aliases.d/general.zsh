@@ -31,6 +31,7 @@ alias -g N="&>/dev/null"
 
 #alias ls='ls -CFh --color=auto'
 alias ls='ls -CFhG'
+alias lsa='ls -la'
 alias lsh='ls -d .*'                       # Show hidden files
 alias lsd='ls -d *(/)'                     # Show directories
 alias lse='ls -d *(/^F)'                   # Show empty directories
