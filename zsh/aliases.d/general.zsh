@@ -11,7 +11,6 @@ alias tree='tree --noreport --dirsfirst -F'
 alias t='ctags -R'
 alias vt='v -t'
 alias vv='v -c "EditConfig"'
-alias b='brew'
 
 # Make head/tail output fill screen
 #alias head='head -n $((LINES-2))'
@@ -159,9 +158,5 @@ alias dpr='sudo dpkg -r'  # Remove
 # alias aptcc='aptitude -F "%p" search "~c" | xargs sudo aptitude -y purge'
 
 #}}}
-
-# Mac OSX
-alias brew-upgrade='brew update && brew upgrade'
-alias cask='brew cask'
 
 # vim: set ft=zsh:
