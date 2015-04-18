@@ -10,11 +10,11 @@ fi
 # nvm
 if [[ -s "$HOME/.nvm" ]]; then
 	if [[ "$(uname)" == "Darwin" ]]; then
-		source "/usr/local/opt/nvm/nvm.sh"
 		export NVM_DIR=~/.nvm
+    source $(brew --prefix nvm)/nvm.sh
 	else
-		source "$HOME/.nvm/nvm.sh"
 		export NVM_DIR=~/.nvm
+		source "$HOME/.nvm/nvm.sh"
 	fi
 fi
 
