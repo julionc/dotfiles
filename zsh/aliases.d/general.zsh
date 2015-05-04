@@ -12,6 +12,16 @@ alias t='ctags -R'
 alias vt='v -t'
 alias vv='v -c "EditConfig"'
 
+# youtube-dl
+alias ytd='youtube-dl'
+alias yta='youtube-dl -x --audio-quality 0 '
+alias yt2mp3='youtube-dl -x --audio-format mp3'
+alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
 # Make head/tail output fill screen
 #alias head='head -n $((LINES-2))'
 #alias tail='tail -n $((LINES-2))'
