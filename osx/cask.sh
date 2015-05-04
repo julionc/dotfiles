@@ -44,6 +44,7 @@ brew cask install jdownloader
 brew cask install osxfuse
 brew cask install rescuetime
 brew cask install skype
+brew cask install the-unarchiver
 brew cask install transmission
 
 # Privacy
