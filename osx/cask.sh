@@ -32,7 +32,6 @@ brew cask install spectacle
 brew cask install epic
 brew cask install google-chrome
 brew cask install firefox
-brew cask install firefoxdeveloperedition
 
 # Everything Else
 brew cask install caffeine
@@ -61,3 +60,4 @@ brew cask install teeworlds
 
 # Remove outdated versions from the Cellar
 brew cleanup
+brew cask cleanup
