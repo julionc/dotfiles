@@ -22,10 +22,6 @@ alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
-# Make head/tail output fill screen
-#alias head='head -n $((LINES-2))'
-#alias tail='tail -n $((LINES-2))'
-
 # global {{{1
 
 alias -g L="|less"
@@ -145,7 +141,7 @@ alias pypath='python -c "import sys, pprint; pprint.pprint(sys.path)"'
 # apt {{{1
 
 alias apti='sudo apt-get install'
-alias aptrm='sudo apt-get remove'
+alias aptx='sudo apt-get remove'
 alias aptp='sudo apt-get purge'
 alias apts='apt-cache search'
 alias aptup='sudo apt-get update'
@@ -154,19 +150,3 @@ alias aptdu='sudo apt-get dist-upgrade'
 alias dpl='dpkg -l'       # List
 alias dpi='sudo dpkg -i'  # Install
 alias dpr='sudo dpkg -r'  # Remove
-
-# alias apt='aptitude'
-# alias apts='aptitude search'
-# alias apti='sudo aptitude -r install'
-# alias aptv='aptitude -F "%p#%v#" search'
-# alias aptrm='sudo aptitude remove'
-# alias aptbd='sudo aptitude build-dep'
-# alias aptac='sudo aptitude autoclean'
-# alias aptup='sudo aptitude update'
-# alias aptdu='sudo aptitude dist-upgrade'
-# alias aptsu='sudo aptitude safe-upgrade'
-# alias aptcc='aptitude -F "%p" search "~c" | xargs sudo aptitude -y purge'
-
-#}}}
-
-# vim: set ft=zsh:
