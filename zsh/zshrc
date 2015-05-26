@@ -9,6 +9,5 @@ for func (~/.dotfiles/zsh/private.d/*(N.)) autoload -U ${func:t}
 
 # Aliases.d
 osName=`uname -s | tr "[:upper:]" "[:lower:]"`
-source ~/.dotfiles/aliases.d/general.zsh
-source ~/.dotfiles/aliases.d/$osName.zsh
-
+source ~/.dotfiles/aliases.d/os/$osName.zsh
+for conf (~/.dotfiles/aliases.d/*(N.)) source $conf
