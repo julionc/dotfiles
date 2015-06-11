@@ -39,5 +39,9 @@ brew install caskroom/cask/brew-cask
 # Install Alternative versions of Cask
 brew tap caskroom/versions
 
+# Install NTFS support
+brew install homebrew/fuse/ntfs-3g
+brew install Caskroom/cask/osxfuse
+
 # Remove outdated versions from the Cellar
 brew cleanup
