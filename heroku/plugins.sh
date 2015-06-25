@@ -8,3 +8,4 @@ function heroku_install() {
 heroku_install 'tpope/heroku-fucking-console'
 heroku_install 'tpope/heroku-pgbackups-pull'
 heroku_install 'heroku/heroku-accounts'
+heroku_install 'heroku/heroku-pg-extras'
