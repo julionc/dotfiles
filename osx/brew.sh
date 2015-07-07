@@ -43,5 +43,8 @@ brew tap caskroom/versions
 brew install homebrew/fuse/ntfs-3g
 brew install Caskroom/cask/osxfuse
 
+# Syslink
+brew linkapps
+
 # Remove outdated versions from the Cellar
 brew cleanup

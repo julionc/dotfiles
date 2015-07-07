@@ -34,6 +34,7 @@ brew cask install google-chrome
 brew cask install firefox
 
 # Everything Else
+brew cask install adobe-creative-cloud
 brew cask install caffeine
 brew cask install dash
 brew cask install dropbox
