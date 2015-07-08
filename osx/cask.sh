@@ -36,6 +36,7 @@ brew cask install firefox
 # Everything Else
 brew cask install adobe-creative-cloud
 brew cask install caffeine
+brew cask install cyberduck
 brew cask install dash
 brew cask install dropbox
 brew cask install flash
