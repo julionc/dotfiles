@@ -24,17 +24,25 @@ LSB_DISTRIBUTOR=`lsb_release -i -s`
 # debian and ubuntu specific aliases
 ## autocomplete-able apt-xxx aliases
 if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
-    alias acs='apt-cache show'
-    alias apti='sudo apt-get install'
+    # apt {{{1
     alias apt='sudo apt-get'
-    alias aptu='sudo apt-get update'
-    alias aptU='sudo apt-get upgrade'
-    alias aguu='agu && agug'
+    alias apti='sudo apt-get install'
+    alias aptx='sudo apt-get remove'
     alias aptx='sudo apt-get uninstall'
     alias aptp='sudo apt-get purge'
+    alias apts='apt-cache search'
+    alias aptu='sudo apt-get update'
+    alias aptU='sudo apt-get upgrade'
+    alias aptdu='sudo apt-get dist-upgrade'
     alias aptar='sudo apt-get autoremove'
+
     alias ctl='sudo service '
     alias feierabend='sudo shutdown -h now'
+
+    # dpkg {{{1
+    alias dpl='dpkg -l'       # List
+    alias dpi='sudo dpkg -i'  # Install
+    alias dpr='sudo dpkg -r'  # Remove
 fi
 
 # arch linux with systemd aliases

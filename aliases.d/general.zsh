@@ -137,16 +137,3 @@ alias py=python
 alias pudb='python -m pudb.run'
 alias web='python -m SimpleHTTPServer'
 alias pypath='python -c "import sys, pprint; pprint.pprint(sys.path)"'
-
-# apt {{{1
-
-alias apti='sudo apt-get install'
-alias aptx='sudo apt-get remove'
-alias aptp='sudo apt-get purge'
-alias apts='apt-cache search'
-alias aptup='sudo apt-get update'
-alias aptdu='sudo apt-get dist-upgrade'
-
-alias dpl='dpkg -l'       # List
-alias dpi='sudo dpkg -i'  # Install
-alias dpr='sudo dpkg -r'  # Remove
