@@ -7,6 +7,8 @@ brew cask install chefdk
 
 # Essential
 brew cask install caffeine
+brew cask install flashlight
+brew cask install flashlight-tool
 
 # Music
 brew cask install spotify
