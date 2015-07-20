@@ -50,9 +50,9 @@ if [[ "$LSB_DISTRIBUTOR" == "archlinux" ]]; then
     # statements
     alias ctl='sudo systemctl '
     alias feierabend='sudo systemctl start poweroff.target'
-    alias start=" sudo systemctl start"
-    alias stop=" sudo systemctl stop"
-    alias status=" sudo systemctl status"
-    alias restart=" sudo systemctl restart"
+    alias start="sudo systemctl start"
+    alias stop="sudo systemctl stop"
+    alias status="sudo systemctl status"
+    alias restart="sudo systemctl restart"
     alias reboot="sudo systemctl start reboot.target"
 fi
