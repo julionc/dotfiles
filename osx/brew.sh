@@ -40,8 +40,8 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Install NTFS support
-brew install homebrew/fuse/ntfs-3g
-brew install Caskroom/cask/osxfuse
+#brew install homebrew/fuse/ntfs-3g
+#brew install Caskroom/cask/osxfuse
 
 # Syslink
 brew linkapps
