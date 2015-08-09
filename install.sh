@@ -12,3 +12,6 @@ ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 
 # Others
 ln -sf ~/.dotfiles/ruby/gemrc ~/.gemrc
+
+# VIM
+ln -sf ~/.vim/vimrc ~/.vimrc

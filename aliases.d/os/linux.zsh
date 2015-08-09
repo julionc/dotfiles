@@ -29,6 +29,7 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
     alias apti='sudo apt-get install'
     alias aptx='sudo apt-get remove'
     alias aptx='sudo apt-get uninstall'
+    alias aptr='sudo apt-get install --reinstall'
     alias aptp='sudo apt-get purge'
     alias apts='apt-cache search'
     alias aptu='sudo apt-get update'
