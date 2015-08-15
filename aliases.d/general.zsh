@@ -3,8 +3,6 @@ alias mv='mv -v'
 alias mkdir='mkdir -p'
 alias mmv='noglob zmv -W'
 alias grep='grep -I --color=auto'
-alias myip='curl http://ifconfig.me/ip'
-alias myip2='curl -s https://secure.internode.on.net/webtools/showmyip\?textonly=1'
 alias po=popd
 alias pu=pushd
 alias tree='tree --noreport --dirsfirst -F'
@@ -17,10 +15,6 @@ alias ytd='youtube-dl'
 alias yta='youtube-dl -x --audio-quality 0 '
 alias yt2mp3='youtube-dl -x --audio-format mp3'
 alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
-
-# View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 # global {{{1
 
