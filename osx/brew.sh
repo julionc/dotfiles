@@ -22,11 +22,12 @@ brew install git-extras
 brew install heroku-toolbelt
 brew install nmap
 brew install rename
-brew install tree
-brew install zsh
 brew install rbenv
 brew install ruby-build
+brew install tree
+brew install vim
 brew install wireshark --with-qt
+brew install zsh
 
 # Install Binary apps with homebrew-binary
 brew tap homebrew/binary
