@@ -101,3 +101,8 @@ alias dfk='df -PTk'                 # Kilobytes
 alias dfm='df -PTm'                 # Megabytes
 alias dfg='df -PT --block-size=1G'  # Gigabytes
 
+
+# vagrant {{{1
+alias vup='vagrant up'
+alias vss='vagrant ssh'
+alias vst='vagrant status'
