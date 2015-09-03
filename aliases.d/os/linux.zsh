@@ -28,7 +28,7 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
     alias apt='sudo apt-get'
     alias apti='sudo apt-get install'
     alias aptx='sudo apt-get remove'
-    alias aptx='sudo apt-get uninstall'
+    alias aptX='sudo apt-get uninstall'
     alias aptr='sudo apt-get install --reinstall'
     alias aptp='sudo apt-get purge'
     alias apts='apt-cache search'
@@ -44,6 +44,9 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
     alias dpl='dpkg -l'       # List
     alias dpi='sudo dpkg -i'  # Install
     alias dpr='sudo dpkg -r'  # Remove
+
+    # autojump
+    . /usr/share/autojump/autojump.sh
 fi
 
 # arch linux with systemd aliases
