@@ -31,7 +31,8 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
     alias aptX='sudo apt-get uninstall'
     alias aptr='sudo apt-get install --reinstall'
     alias aptp='sudo apt-get purge'
-    alias apts='apt-cache search'
+    alias apts='sudo apt-cache search'
+    alias aptshow='sudo apt-cache show'
     alias aptu='sudo apt-get update'
     alias aptU='sudo apt-get upgrade'
     alias aptdu='sudo apt-get dist-upgrade'
@@ -47,7 +48,10 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
 
     # autojump
     . /usr/share/autojump/autojump.sh
-      alias ack='ack-grep'
+
+    # Others
+    alias ack='ack-grep'
+    alias open='nautilus'
 fi
 
 # arch linux with systemd aliases
