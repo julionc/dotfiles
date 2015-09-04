@@ -47,6 +47,7 @@ if [[ "$LSB_DISTRIBUTOR" == "Ubuntu" ]]; then
 
     # autojump
     . /usr/share/autojump/autojump.sh
+      alias ack='ack-grep'
 fi
 
 # arch linux with systemd aliases
