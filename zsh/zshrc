@@ -1,13 +1,15 @@
 #  ~/.zshrc
 
+osName=`uname -s | tr "[:upper:]" "[:lower:]"`
+
 source ~/.dotfiles/zprezto/zshrc
 source ~/.dotfiles/zsh/environment.zsh
+source ~/.dotfiles/zsh/$osName.zsh
 source ~/.dotfiles/zsh/functions.zsh
 
 for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
 for func (~/.dotfiles/zsh/private.d/*(N.)) autoload -U ${func:t}
 
-# Aliases.d
-osName=`uname -s | tr "[:upper:]" "[:lower:]"`
+# aliases.d
 source ~/.dotfiles/aliases.d/os/$osName.zsh
 for conf (~/.dotfiles/aliases.d/*(N.)) source $conf
