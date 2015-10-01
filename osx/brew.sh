@@ -21,7 +21,9 @@ brew install git
 brew install git-extras
 brew install heroku-toolbelt
 brew install nmap
+brew install nvm
 brew install rename
+brew install ranger
 brew install rbenv
 brew install ruby-build
 brew install tree
