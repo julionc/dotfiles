@@ -20,6 +20,7 @@ brew install ctags
 brew install git
 brew install git-extras
 brew install heroku-toolbelt
+brew install htop-osx
 brew install nmap
 brew install nvm
 brew install rename
