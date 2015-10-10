@@ -27,6 +27,7 @@ brew install rename
 brew install ranger
 brew install rbenv
 brew install ruby-build
+brew install the_silver_searcher
 brew install tree
 brew install vim
 brew install wireshark --with-qt
