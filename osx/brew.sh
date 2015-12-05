@@ -49,7 +49,8 @@ brew tap caskroom/versions
 #brew install Caskroom/cask/osxfuse
 
 # Install NeoVIM
-brew install neovim/neovim/neovim
+brew tap neovim/neovim
+brew install --HEAD neovim
 
 # Syslink
 brew linkapps
