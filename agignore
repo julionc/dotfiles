@@ -6,3 +6,5 @@ releases
 *.scssc
 tmp
 deps
+cscope.*
+tags
