@@ -8,14 +8,16 @@ if [ -d "$HOME/.rbenv" ] ; then
 fi
 
 # nvm
-if [[ -s "$HOME/.nvm" ]]; then
-	if [[ "$(uname)" == "Darwin" ]]; then
-		export NVM_DIR=~/.nvm
-    source $(brew --prefix nvm)/nvm.sh
-	else
-		export NVM_DIR=~/.nvm
-		source "$HOME/.nvm/nvm.sh"
-	fi
+if [[ -d "$HOME/.nvm" ]]; then
+	if [[ "$(uname)" == "Darwin" ]]
+  then
+    export NVM_PATH=$(brew --prefix nvm)
+  else
+    export NVM_PATH="$HOME/.nvm"
+  fi
+
+  export NVM_DIR=~/.nvm
+  source "$NVM_PATH/nvm.sh"
 fi
 
 # jenv
