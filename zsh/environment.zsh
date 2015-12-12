@@ -25,3 +25,7 @@ if [[ -s "$HOME/.jenv" ]]; then
   export PATH="$HOME/.jenv/bin:$PATH"
   eval "$(jenv init -)"
 fi
+
+# GoLang
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
