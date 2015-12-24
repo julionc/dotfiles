@@ -16,3 +16,4 @@ ln -sf ~/.dotfiles/agignore ~/.agignore
 
 # VIM
 ln -sf ~/.vim/vimrc ~/.vimrc
+vim -c PlugInstall -c qall
