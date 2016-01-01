@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+	autocrlf = true
 [alias]
 	a = add
 	br = branch
@@ -13,8 +14,8 @@
 	st = status -sb
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	lock = update-index --skip-worktree
-	unlock = update-index --no-skip-worktree
+	#lock = update-index --skip-worktree
+	#unlock = update-index --no-skip-worktree
 	unstage = reset HEAD
 	uncommit = reset --soft HEAD^
 [color]
