@@ -20,8 +20,8 @@ fi
 
 # jenv
 if [[ -s "$HOME/.jenv" ]]; then
-  export PATH="$HOME/.jenv/bin:$PATH"
-  eval "$(jenv init -)"
+	export PATH="$HOME/.jenv/bin:$PATH"
+	eval "$(jenv init -)"
 fi
 
 # GoLang

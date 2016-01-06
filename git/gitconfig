@@ -10,7 +10,6 @@
 	br = branch
 	ci = commit -m
 	co = checkout
-	count = shortlog
 	st = status -sb
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
