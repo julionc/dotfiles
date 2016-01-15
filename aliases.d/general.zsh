@@ -101,3 +101,4 @@ alias dfk='df -PTk'                 # Kilobytes
 alias dfm='df -PTm'                 # Megabytes
 alias dfg='df -PT --block-size=1G'  # Gigabytes
 
+alias reload="exec $SHELL -l"
