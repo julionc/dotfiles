@@ -27,3 +27,7 @@ fi
 # GoLang
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
+
+# Chromium && CEF
+export DEPOT_TOOLS=~/CEF/depot_tools
+export PATH=$PATH:$DEPOT_TOOLS
