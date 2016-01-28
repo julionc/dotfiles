@@ -20,7 +20,7 @@ brew install ctags
 brew install git
 brew install git-extras
 brew install heroku-toolbelt
-brew install htop-osx
+brew install htop
 brew install nmap
 brew install nvm
 brew install rename
@@ -30,16 +30,13 @@ brew install ruby-build
 brew install the_silver_searcher
 brew install tree
 brew install vim
-brew install wireshark --with-qt
+#brew install wireshark --with-qt
 brew install zsh
 
 # Install Binary apps with homebrew-binary
-brew tap homebrew/binary
-brew install docker
-brew install packer
-
-# Install Native apps with Brew Cask
-brew install caskroom/cask/brew-cask
+#brew tap homebrew/binary
+#brew install docker
+#brew install packer
 
 # Install Alternative versions of Cask
 brew tap caskroom/versions
@@ -49,8 +46,8 @@ brew tap caskroom/versions
 #brew install Caskroom/cask/osxfuse
 
 # Install NeoVIM
-brew tap neovim/neovim
-brew install --HEAD neovim
+#brew tap neovim/neovim
+#brew install --HEAD neovim
 
 # Syslink
 brew linkapps
