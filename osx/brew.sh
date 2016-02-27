@@ -18,6 +18,7 @@ brew install ack
 brew install autojump
 brew install ctags
 brew install git
+brew install fzf
 brew install git-extras
 brew install heroku-toolbelt
 brew install htop
