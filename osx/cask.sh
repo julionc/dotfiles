@@ -26,6 +26,7 @@ brew cask install sequel-pro
 
 # Productivity
 brew cask install evernote
+brew cask install gitter
 brew cask install slack
 #brew cask install spectacle
 
