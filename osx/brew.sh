@@ -22,6 +22,7 @@ brew install fzf
 brew install git-extras
 brew install heroku-toolbelt
 brew install htop
+brew install httpie
 brew install nmap
 brew install nvm
 brew install rename
