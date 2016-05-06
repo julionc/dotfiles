@@ -13,8 +13,3 @@ ln -sf ~/.dotfiles/git/gitignore ~/.gitignore_global
 # Others
 ln -sf ~/.dotfiles/ruby/gemrc ~/.gemrc
 ln -sf ~/.dotfiles/agignore ~/.agignore
-
-# VIM
-ln -sf ~/.vim/vimrc ~/.vimrc
-ln -sf ~/.vim/gvimrc ~/.gvimrc
-vim +PlugInstall +qall
