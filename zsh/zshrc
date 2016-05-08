@@ -8,7 +8,7 @@ source ~/.dotfiles/zsh/$osName.zsh
 source ~/.dotfiles/zsh/functions.zsh
 
 for conf (~/.dotfiles/zsh/conf.d/*(N.)) source $conf
-for func (~/.dotfiles/zsh/private.d/*(N.)) autoload -U ${func:t}
+for conf (~/.dotfiles/zsh/private.d/*(N.)) source $conf
 
 # aliases.d
 source ~/.dotfiles/aliases.d/os/$osName.zsh
