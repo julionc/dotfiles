@@ -31,3 +31,6 @@ export PATH=$PATH:$GOROOT/bin
 # Chromium && CEF
 export DEPOT_TOOLS=~/CEF/depot_tools
 export PATH=$PATH:$DEPOT_TOOLS
+
+# SlimerJS
+export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
