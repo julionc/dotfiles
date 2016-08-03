@@ -5,7 +5,6 @@ brew cask install spotify
 brew cask install spotifree
 
 # Programming
-brew cask install atom
 brew cask install github
 brew cask install iterm2
 brew cask install macvim
@@ -16,6 +15,7 @@ brew cask install macvim
 brew cask install sourcetree
 #brew cask install sublime-text
 brew cask install sequel-pro
+brew cask install visual-studio-code
 
 # Productivity
 brew cask install evernote
@@ -29,11 +29,12 @@ brew cask install caffeine
 #brew cask install cyberduck
 brew cask install dropbox
 brew cask install google-chrome
-#brew cask install gyazo
-#brew cask install jdownloader
+brew cask install gyazo
+brew cask install jdownloader
 brew cask install rescuetime
-#brew cask install skype
-#brew cask install the-unarchiver
+brew cask install skype
+brew cask install skitch
+brew cask install the-unarchiver
 #brew cask install transmission
 brew cask install tunnelbear
 
