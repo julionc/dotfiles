@@ -31,6 +31,7 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install gyazo
 brew cask install jdownloader
+brew cask install little-snitch
 brew cask install rescuetime
 brew cask install skype
 brew cask install skitch
