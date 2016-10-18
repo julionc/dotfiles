@@ -8,6 +8,7 @@ brew cask install spotifree
 brew cask install github
 brew cask install iterm2
 brew cask install macvim
+brew cask install phpstorm
 #brew cask install postgres
 #brew cask install pgadmin3
 #brew cask install robomongo
@@ -32,6 +33,7 @@ brew cask install google-chrome
 brew cask install gyazo
 brew cask install jdownloader
 brew cask install little-snitch
+brew cask install poedit
 brew cask install rescuetime
 brew cask install skype
 brew cask install skitch
