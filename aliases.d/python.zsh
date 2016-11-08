@@ -16,3 +16,4 @@ alias workoff=deactivate
 alias pipi='pip install'
 alias pipx='pip uninstall'
 alias pip-remove-all='pip freeze | xargs pip uninstall -y'
+alias pip-freeze-req='pip freeze > requirements.txt'
