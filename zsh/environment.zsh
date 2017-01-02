@@ -34,3 +34,6 @@ export PATH=$PATH:$DEPOT_TOOLS
 
 # SlimerJS
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
+
+# Themekit
+export PATH=~/.themekit:$PATH
