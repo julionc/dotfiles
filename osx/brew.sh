@@ -34,6 +34,7 @@ brew install tree
 brew install vim
 #brew install wireshark --with-qt
 brew install wrk
+brew install yarn
 brew install zsh
 
 # Install Binary apps with homebrew-binary
