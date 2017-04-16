@@ -12,7 +12,7 @@ brew cask install phpstorm
 #brew cask install postgres
 #brew cask install pgadmin3
 #brew cask install robomongo
-#brew cask install rubymine
+brew cask install rubymine
 brew cask install sourcetree
 #brew cask install sublime-text
 brew cask install sequel-pro
@@ -21,6 +21,7 @@ brew cask install visual-studio-code
 # Productivity
 brew cask install evernote
 #brew cask install gitter
+brew cask install rescuetime
 brew cask install slack
 #brew cask install spectacle
 
@@ -34,7 +35,6 @@ brew cask install gyazo
 brew cask install jdownloader
 brew cask install little-snitch
 brew cask install poedit
-brew cask install rescuetime
 brew cask install skype
 brew cask install skitch
 brew cask install the-unarchiver
@@ -47,8 +47,8 @@ brew cask install minecraft
 #brew cask install teeworlds
 
 # Virtualization
-#brew cask install virtualbox
-#brew cask install vagrant
+brew cask install virtualbox
+brew cask install vagrant
 #brew cask install chefdk
 
 # Remove outdated versions from the Cellar

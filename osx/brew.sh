@@ -20,7 +20,7 @@ brew install ctags
 brew install git
 brew install fzf
 brew install git-extras
-brew install heroku-toolbelt
+brew install heroku
 brew install htop
 brew install httpie
 brew install nmap
