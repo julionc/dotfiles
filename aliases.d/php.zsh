@@ -12,3 +12,5 @@ alias phpunit-report-runtime="phpunit --log-json php://stdout \
   | sed \"s/,//\"   \
   | awk 'BEGIN{FS=\"--\"}; {print \$2 \$1}' | sort -r \
   | head -n 5"
+
+alias magento='php bin/magento'
