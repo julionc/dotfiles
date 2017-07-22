@@ -25,10 +25,9 @@ if [[ -s "$HOME/.jenv" ]]; then
 fi
 
 # GoLang
-export GOROOT=/usr/local/bin/go
-export PATH=$PATH:$GOROOT/bin
-
-PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec/
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Chromium && CEF
 export DEPOT_TOOLS=~/CEF/depot_tools
