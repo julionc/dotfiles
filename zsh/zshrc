@@ -14,4 +14,3 @@ for conf (~/.dotfiles/zsh/private.d/*(N.)) source $conf
 source ~/.dotfiles/aliases.d/os/$osName.zsh
 for conf (~/.dotfiles/aliases.d/*(N.)) source $conf
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
