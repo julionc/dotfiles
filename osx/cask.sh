@@ -39,6 +39,10 @@ brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install vagrant
 
+# Check 
+brew cask install knockknock
+brew cask install etrecheck
+
 # Remove outdated versions from the Cellar
 brew cleanup
 brew cask cleanup
