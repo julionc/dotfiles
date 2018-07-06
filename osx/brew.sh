@@ -54,8 +54,5 @@ brew tap caskroom/versions
 #brew tap neovim/neovim
 #brew install --HEAD neovim
 
-# Syslink
-brew linkapps
-
 # Remove outdated versions from the Cellar
 brew cleanup
