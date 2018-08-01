@@ -6,6 +6,7 @@ brew cask install github
 brew cask install insomnia
 brew cask install iterm2
 brew cask install macvim
+brew cask install ngrok
 brew cask install phpstorm
 brew cask install pycharm
 brew cask install rubymine
