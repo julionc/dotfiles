@@ -37,6 +37,11 @@ brew cask install the-unarchiver
 brew cask install transmission
 brew cask install tunnelbear
 
+# Fonts
+brew cask install font-dashicons
+brew cask install font-noto-serif
+brew cask install font-roboto
+
 # Virtualization
 brew cask install vagrant-manager
 brew cask install virtualbox
