@@ -39,6 +39,7 @@ brew cask install tunnelbear
 
 # Fonts
 brew cask install font-dashicons
+brew cask install font-lato
 brew cask install font-noto-serif
 brew cask install font-roboto
 
