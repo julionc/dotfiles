@@ -18,20 +18,15 @@ if [[ -s "$HOME/.nvm" ]]; then
 	fi
 fi
 
-# jenv
-if [[ -s "$HOME/.jenv" ]]; then
-	export PATH="$HOME/.jenv/bin:$PATH"
-	eval "$(jenv init -)"
-fi
-
 # GoLang
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec/
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# Chromium && CEF
-export DEPOT_TOOLS=~/CEF/depot_tools
-export PATH=$PATH:$DEPOT_TOOLS
+# git-extras
+if [[ -s /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh ]]; then
+  source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
+fi
 
 # SlimerJS
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
