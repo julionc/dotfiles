@@ -36,9 +36,11 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
+  'syntax-highlightingdocker' \
   'git' \
   'homebrew' \
   'ruby' \
+  'docker' \
 
 #
 # Autosuggestions
