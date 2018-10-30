@@ -44,6 +44,7 @@ brew cask install font-noto-serif
 brew cask install font-roboto
 
 # Virtualization
+brew cask install docker
 brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install vagrant
