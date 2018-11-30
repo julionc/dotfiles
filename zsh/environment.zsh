@@ -28,8 +28,9 @@ if [[ -s /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh ]]
   source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
 fi
 
-# SlimerJS
-export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
-
 # Themekit
 export PATH=~/.themekit:$PATH
+
+# zsh-completions
+# fpath=(/usr/local/share/zsh-completions $fpath)
+export PATH=/usr/local/share/zsh-completions:$PATH

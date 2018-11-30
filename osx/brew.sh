@@ -37,6 +37,7 @@ brew install vim
 brew install wrk
 brew install yarn
 brew install zsh
+brew install zsh-completions
 
 # Install Binary apps with homebrew-binary
 #brew tap homebrew/binary
