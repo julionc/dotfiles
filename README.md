@@ -17,3 +17,21 @@ Xcode
 `chsh -s /bin/zsh`
 
 [Prezto](https://github.com/sorin-ionescu/prezto)
+
+### Fish
+
+```
+brew install fish
+```
+
+You will need to add:
+```
+/usr/local/bin/fish
+```
+to /etc/shells.
+
+Then run:
+```
+chsh -s /usr/local/bin/fish
+```
+to make fish your default shell.

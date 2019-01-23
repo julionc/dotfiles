@@ -18,6 +18,7 @@ brew cask install visual-studio-code
 
 # Productivity
 brew cask install evernote
+brew cask install fish
 brew cask install iterm2
 brew cask install rescuetime
 brew cask install slack
