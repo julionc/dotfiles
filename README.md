@@ -12,6 +12,9 @@ Xcode
 
 [Homebrew Cask Versions](https://github.com/caskroom/homebrew-versions)
 
+brew install mas
+brew bundle
+
 ### ZSH
 
 `chsh -s /bin/zsh`
