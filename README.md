@@ -12,8 +12,13 @@ Xcode
 
 [Homebrew Cask Versions](https://github.com/caskroom/homebrew-versions)
 
+[Mac App Store command line interface](https://github.com/mas-cli/mas)
+
+```
 brew install mas
 brew bundle
+```
+## Shell
 
 ### ZSH
 
