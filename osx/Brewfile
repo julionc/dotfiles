@@ -38,14 +38,17 @@ cask "ngrok"
 cask "nordvpn"
 cask "notion"
 cask "opera"
+cask "postman"
 cask "sequel-pro"
 cask "skype"
 cask "slack"
+cask "springtoolsuite"
 cask "uxprotect"
 cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vnc-viewer"
 mas "Adblock Plus", id: 1432731683
+mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
