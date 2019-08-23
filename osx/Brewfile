@@ -7,6 +7,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "vitorgalvao/tiny-scripts"
 brew "autojump"
+brew "awscli"
 brew "bat"
 brew "diff-so-fancy"
 brew "fish"
@@ -20,12 +21,12 @@ brew "youtube-dl"
 brew "heroku/brew/heroku"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "adobe-creative-cloud"
+cask "beardedspice"
 cask "brave-browser"
 cask "caffeine"
 cask "cheatsheet"
 cask "docker"
 cask "dropbox"
-cask "etrecheckpro"
 cask "evernote"
 cask "firefox"
 cask "flux"
@@ -43,7 +44,6 @@ cask "opera"
 cask "postman"
 cask "sequel-pro"
 cask "skype"
-cask "slack"
 cask "springtoolsuite"
 cask "tunnelbear"
 cask "uxprotect"
@@ -53,6 +53,10 @@ cask "visual-studio-code"
 cask "vnc-viewer"
 cask "wondershare-filmora"
 mas "Adblock Plus", id: 1432731683
+mas "Amphetamine", id: 937984704
+mas "EtreCheck", id: 1423715984
+mas "Slack", id: 803453959
+mas "Speed Test", id: 1066718511
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
