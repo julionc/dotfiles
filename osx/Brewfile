@@ -27,6 +27,7 @@ cask "caffeine"
 cask "cheatsheet"
 cask "docker"
 cask "dropbox"
+cask "etrecheckpro"
 cask "evernote"
 cask "firefox"
 cask "flux"
@@ -41,6 +42,8 @@ cask "ngrok"
 cask "nordvpn"
 cask "notion"
 cask "opera"
+cask "phpstorm"
+cask "poedit"
 cask "postman"
 cask "sequel-pro"
 cask "skype"
@@ -54,9 +57,7 @@ cask "vnc-viewer"
 cask "wondershare-filmora"
 mas "Adblock Plus", id: 1432731683
 mas "Amphetamine", id: 937984704
-mas "EtreCheck", id: 1423715984
 mas "Slack", id: 803453959
-mas "Speed Test", id: 1066718511
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
