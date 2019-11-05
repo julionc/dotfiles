@@ -8,9 +8,9 @@ Xcode
 
 [Homebrew — The missing package manager for OS X](http://brew.sh)
 
-[Homebrew Cask](http://caskroom.io)
+[Homebrew Cask](https://github.com/Homebrew/homebrew-cask)
 
-[Homebrew Cask Versions](https://github.com/caskroom/homebrew-versions)
+[Homebrew Cask Versions](https://github.com/Homebrew/homebrew-cask-versions)
 
 [Mac App Store command line interface](https://github.com/mas-cli/mas)
 
