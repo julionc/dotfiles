@@ -13,3 +13,6 @@ ln -sf ~/.dotfiles/git/gitignore ~/.gitignore_global
 # Others
 ln -sf ~/.dotfiles/ruby/gemrc ~/.gemrc
 ln -sf ~/.dotfiles/agignore ~/.agignore
+
+# finicky
+ln -sf ~/.dotfiles/osx/finicky.js ~/.finicky.js
