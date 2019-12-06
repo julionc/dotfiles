@@ -2,16 +2,6 @@ module.exports = {
   defaultBrowser: "Safari",
   handlers: [
     {
-      // Open apple.com and example.org urls in Safari
-      match: finicky.matchHostnames(["apple.com", "example.org"]),
-      browser: "Safari"
-    },
-    {
-      // Open any url including the string "workplace" in Firefox
-      match: /workplace/,
-      browser: "Firefox"
-    },
-    {
       // Open Social Media in Opera
       match: finicky.matchHostnames(["facebook.com", "twitter.com", "instagram.com", "whatsapp.com"]),
       browser: "Opera"
@@ -20,6 +10,22 @@ module.exports = {
       // Open IMs forums in Firefox
       match: finicky.matchHostnames(["blackhatworld.com", "forobeta.com"]),
       browser: "Firefox"
+    },
+    {
+      // Open Github in Brave
+      match: finicky.matchHostnames(["github.com"]),
+      browser: "Brave"
+    },
+    {
+      // Open Twitch in Opera
+      match: finicky.matchHostnames(["twitch.tv"]),
+      browser: "Opera"
+    },
+    {
+      // Open Reddit in Brave
+      match: finicky.matchHostnames(["reddit.com"]),
+      browser: "Brave"
     }
+
   ]
 };
