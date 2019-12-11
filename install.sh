@@ -10,6 +10,9 @@ ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/git/gitignore ~/.gitignore_global
 
+# Fish
+ln -s ~/.dotfiles/fish ~/.config/fish
+
 # Others
 ln -sf ~/.dotfiles/ruby/gemrc ~/.gemrc
 ln -sf ~/.dotfiles/agignore ~/.agignore
