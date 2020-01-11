@@ -10,6 +10,8 @@ end
 abbr -a gst git status
 abbr -a giff git diff
 abbr -a j z
+abbr -a vim nvim
+abbr -a cat bat
 
 # StarShip
 starship init fish | source
