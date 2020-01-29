@@ -29,6 +29,6 @@ rm -rfv ~/Library/Developer/Xcode/DerivedData/*
 rm -rfv ~/Library/Developer/Xcode/Archives/*
 
 print 'Cleanup Homebrew Cache...'
-brew cleanup --force -s
+brew cleanup -s
 rm -rfv /Library/Caches/Homebrew/*
 brew tap --repair
