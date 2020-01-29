@@ -12,8 +12,15 @@ abbr -a giff git diff
 abbr -a j z
 abbr -a vim nvim
 abbr -a cat bat
+
+# abbv : homebrew & homebrew-cask
 abbr -a brewi brew install
+abbr -a brewl brew list
+abbr -a brews brew search
+abbr -a brewx brew uninstall
 abbr -a caski brew cask install
+abbr -a caskl brew cask list
+abbr -a caskx brew cask uninstall
 
 # abbv : youtube-dl
 alias ytd='youtube-dl'
