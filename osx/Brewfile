@@ -21,6 +21,7 @@ brew "node"
 brew "ranger"
 brew "starship"
 brew "the_silver_searcher"
+brew "tldr"
 brew "tree"
 brew "wrk"
 brew "youtube-dl"
@@ -41,19 +42,25 @@ cask "jumpshare"
 cask "knockknock"
 cask "microsoft-office"
 cask "minecraft"
+cask "nordvpn"
 cask "notion"
 cask "opera"
 cask "phpstorm"
 cask "rescuetime"
+cask "skype"
 cask "transmission"
+cask "tunnelbear"
 cask "uxprotect"
 cask "vagrant"
 cask "vagrant-manager"
 cask "virtualbox"
+cask "visual-studio-code"
 cask "vlc"
+cask "zoomus"
 mas "Adblock Plus", id: 1432731683
 mas "Amphetamine", id: 937984704
 mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
+mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
