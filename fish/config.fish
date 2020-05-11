@@ -1,4 +1,4 @@
-set -e fish_greeting
+set fish_greeting
 
 # iTerm integration
 if test (uname) = 'Darwin'
@@ -31,3 +31,5 @@ alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
 
 # StarShip
 starship init fish | source
+
+# vim: set filetype=fish:
