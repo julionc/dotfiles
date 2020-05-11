@@ -2,8 +2,8 @@ set -e fish_greeting
 
 # iTerm integration
 if test (uname) = 'Darwin'
-	source "$HOME/.config/fish/iterm2_shell_integration.fish"
-	set PATH $PATH "$HOME/.iterm2"
+  source "$HOME/.config/fish/iterm2_shell_integration.fish"
+  set PATH $PATH "$HOME/.iterm2"
 end
 
 # abbv
@@ -12,7 +12,8 @@ abbr -a giff git diff
 abbr -a j z
 abbr -a vim nvim
 abbr -a cat bat
-
+abbr -a man tldr
+abbr -a web python -m SimpleHTTPServer 8000
 # abbv : homebrew & homebrew-cask
 abbr -a brewi brew install
 abbr -a brewl brew list
