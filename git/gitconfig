@@ -1,6 +1,7 @@
 [user]
 	name = Julio Napurí
 	email = julionc@gmail.com
+	signingkey = 83ED96460517F0DA
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
