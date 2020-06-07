@@ -29,6 +29,8 @@ alias yta='youtube-dl -x --audio-quality 0 '
 alias yt2mp3='youtube-dl -x --audio-format mp3'
 alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
 
+set -x GPG_TTY (tty)
+
 # StarShip
 starship init fish | source
 
