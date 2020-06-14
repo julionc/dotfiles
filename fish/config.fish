@@ -9,7 +9,7 @@ end
 # abbv
 abbr -a gst git status
 abbr -a giff git diff
-abbr -a j z
+abbr -a squash git rebase -i HEAD~
 abbr -a vim nvim
 abbr -a cat bat
 abbr -a man tldr
