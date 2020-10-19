@@ -1,6 +1,6 @@
 # dotfiles
 
-My config files for zsh, git and so on
+My config files for fish, git and so on
 
 # Mac OSX
 
@@ -19,12 +19,6 @@ brew install mas
 brew bundle
 ```
 ## Shell
-
-### ZSH
-
-`chsh -s /bin/zsh`
-
-[Prezto](https://github.com/sorin-ionescu/prezto)
 
 ### Fish
 

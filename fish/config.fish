@@ -14,20 +14,21 @@ abbr -a vim nvim
 abbr -a cat bat
 abbr -a man tldr
 abbr -a web python -m SimpleHTTPServer 8000
+
 # abbv : homebrew & homebrew-cask
 abbr -a brewi brew install
 abbr -a brewl brew list
 abbr -a brews brew search
 abbr -a brewx brew uninstall
 abbr -a caski brew cask install
-abbr -a caskl brew cask list
+abbr -a caskl brew list --cask
 abbr -a caskx brew cask uninstall
 
 # abbv : youtube-dl
 alias ytd='youtube-dl'
 alias yta='youtube-dl -x --audio-quality 0 '
 alias yt2mp3='youtube-dl -x --audio-format mp3'
-alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
+alias yt2mp4='youtube-dl --format mp4'
 
 set -x GPG_TTY (tty)
 
