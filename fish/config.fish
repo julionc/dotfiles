@@ -8,7 +8,8 @@ end
 
 # abbv
 abbr -a gst git status
-abbr -a giff git diff
+#abbr -a giff git diff
+abbr -a giff gd
 abbr -a squash git rebase -i HEAD~
 abbr -a vim nvim
 abbr -a cat bat
