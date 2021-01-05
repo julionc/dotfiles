@@ -20,10 +20,11 @@ abbr -a web python -m SimpleHTTPServer 8000
 abbr -a brewi brew install
 abbr -a brewl brew list
 abbr -a brews brew search
+abbr -a brewu brew update
 abbr -a brewx brew uninstall
-abbr -a caski brew cask install
+abbr -a caski brew install --cask
 abbr -a caskl brew list --cask
-abbr -a caskx brew cask uninstall
+abbr -a caskx brew uninstall --cask
 
 # abbv : youtube-dl
 alias ytd='youtube-dl'
