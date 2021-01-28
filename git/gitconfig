@@ -13,6 +13,7 @@
 	ci = commit -m
 	co = checkout
 	st = status -sb
+	lc = log -n 1 --pretty=format:%H --
 	ll = log --pretty=oneline --abbrev-commit --max-count=15
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	unstage = reset HEAD
@@ -30,19 +31,14 @@
 	path = 
 [format]
 	pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [help]
 	autocorrect = 1
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
 [commit]
 	gpgsign = true
 [credential]
 	helper = cache --timeout=3600
+[init]
+	defaultBranch = main
