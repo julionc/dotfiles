@@ -6,7 +6,25 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = false
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	#pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+	features = side-by-side line-numbers decorations
+	whitespace-error-style = 22 reverse
+	line-numbers = true
+	plus-color = "#012800"
+	minus-color = "#340001"
+	syntax-theme = Monokai Extended
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none	
+
 [alias]
 	a = add
 	br = branch
@@ -42,3 +60,5 @@
 	helper = cache --timeout=3600
 [init]
 	defaultBranch = main
+[pull]
+	ff = only
