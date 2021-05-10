@@ -14,7 +14,7 @@ abbr -a squash git rebase -i HEAD~
 abbr -a vim nvim
 abbr -a cat bat
 abbr -a man tldr
-abbr -a web python -m SimpleHTTPServer 8000
+abbr -a web python -m http.server 8000
 
 # abbv : homebrew & homebrew-cask
 abbr -a brewi brew install
