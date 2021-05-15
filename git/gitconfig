@@ -28,7 +28,7 @@
 [alias]
 	a = add
 	br = branch
-	ci = commit -m
+	ci = commit -S -m
 	co = checkout
 	st = status -sb
 	lc = log -n 1 --pretty=format:%H --
@@ -62,3 +62,7 @@
 	defaultBranch = main
 [pull]
 	ff = only
+[log]
+	showSignature = true
+[gpg]
+	program = /usr/local/bin/gpg
