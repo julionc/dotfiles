@@ -8,192 +8,110 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "vitorgalvao/tiny-scripts"
-# Fast, simple and clean video downloader
 brew "annie"
-# Download with resuming and segmented downloading
 brew "aria2"
-# GNU File, Shell, and Text utilities
 brew "coreutils"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Tool Command Language
+brew "sqlite"
 brew "tcl-tk"
-# Microsoft Azure CLI 2.0
 brew "azure-cli"
-# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Vector graphics library with cross-device output support
+brew "python@3.9"
 brew "cairo"
-# Cross-platform make
 brew "cmake"
-# Dependency Manager for PHP
 brew "composer"
-# Reimplementation of ctags(1)
 brew "ctags"
-# Dextrous text editor
+brew "openldap"
+brew "curl"
 brew "dex"
-# Tools to work with Android .dex and Java .class files
 brew "dex2jar"
-# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-# Lightweight DNS forwarder and DHCP server
 brew "dnsmasq", restart_service: true
-# Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
-# Modern replacement for 'ls'
 brew "exa"
-# OpenType text shaping engine
 brew "harfbuzz"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg", link: false
-# User-friendly command-line shell for UNIX-like operating systems
+brew "libass"
+brew "ffmpeg"
 brew "fish"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# GitHub command-line tool
 brew "gh"
-# Distributed revision control system
 brew "git"
-# Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Small git utilities
 brew "git-extras"
-# Extensions to follow Vincent Driessen's branching model
 brew "git-flow"
-# GNU Pretty Good Privacy (PGP) package
+brew "libusb"
 brew "gnupg"
-# Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
-# Kubernetes package manager
 brew "helm"
-# Improved top (interactive process viewer)
 brew "htop"
-# User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Kubernetes command-line interface
+brew "libheif"
+brew "imagemagick"
+brew "krb5"
 brew "kubernetes-cli"
-# Mac App Store command-line interface
+brew "libpq"
 brew "mas"
-# Run a Kubernetes cluster locally
 brew "minikube"
-# Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
-# Fast, highly customisable system info script
 brew "neofetch"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx", restart_service: true
-# Realtime console network usage monitor
 brew "nload"
-# Platform built on V8 to build network applications
 brew "node"
-# Swiss-army knife of markup format conversion
 brew "pandoc"
-# General-purpose scripting language
 brew "php@7.4", restart_service: true, link: true
-# Python interface to Tcl/Tk
-brew "python-tk@3.9"
-# File browser
 brew "ranger"
-# Safe, concurrent, practical language
+brew "rename"
 brew "rust"
-# Cross-shell prompt for astronauts
 brew "starship"
-# Code-search similar to ack
 brew "the_silver_searcher"
-# Simplified and community-driven man pages
+brew "tiger-vnc"
 brew "tldr"
-# Terminal multiplexer
 brew "tmux"
-# Lightweight BitTorrent client
-brew "transmission-cli"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# HTTP benchmarking tool
 brew "wrk"
-# JavaScript package manager
 brew "yarn"
-# Download YouTube videos from the command-line
 brew "youtube-dl"
-# Post-modern modal text editor
 brew "helix-editor/helix/helix"
-# Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
-# Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
-# JDK from the Java User Group (JUG)
-cask "adoptopenjdk"
-# Web browser focusing on privacy
 cask "brave-browser"
-# Automated testing of webapps for Google Chrome
 cask "chromedriver"
-# Server and cloud storage browser
 cask "cyberduck"
 cask "dbngin"
-# Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
 cask "docker"
-# Client for the Dropbox cloud storage service
 cask "dropbox"
-# App for note taking, organizing, task lists, and archiving
 cask "evernote"
-# Web browser
 cask "firefox"
 cask "font-fira-code"
-# Typeface made for developers
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
-# Web browser
 cask "google-chrome"
-# HTTP and GraphQL Client
 cask "insomnia"
-# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# File sharing, screen recording, and screenshot capture app
 cask "jumpshare"
-# Tool to show what is persistently installed on the computer
 cask "knockknock"
-# Office suite
 cask "microsoft-office"
-# Free and open-source RSS reader
+cask "microsoft-remote-desktop"
 cask "netnewswire"
-# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# App to write, plan, collaborate, and get organized
 cask "notion"
-# Web browser
 cask "opera"
-# Translation editor
-cask "poedit"
-# Collaboration platform for API development
 cask "postman"
-# Modern and intuitive HTTP Debugging Proxy app
 cask "proxyman"
 cask "screaming-frog-seo-spider"
-# Video chat, voice call and instant messaging application
 cask "skype"
-# Team communication and collaboration software
 cask "slack"
-# Music streaming service
 cask "spotify"
-# Next generation tooling for Spring Boot
-cask "springtoolsuite"
-# System monitor for the menu bar
 cask "stats"
-# Text editor for code, markup and prose
-cask "sublime-text"
-# Native GUI tool for relational databases
 cask "tableplus"
-# Open-source BitTorrent client
+cask "teamviewer"
+cask "tigervnc-viewer"
 cask "transmission"
-# VPN client for secure internet access and private browsing
 cask "tunnelbear"
 cask "uxprotect"
-# Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
 cask "vlc"
 mas "Adblock Plus", id: 1432731683
 mas "Amphetamine", id: 937984704
