@@ -1,13 +1,12 @@
-[user]
-	name = Julio Napurí
-	email = julionc@gmail.com
-	signingkey = 83ED96460517F0DA
+# Local/private config goes in the include
+[include]
+    path = ~/.gitconfig.local
+
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 	autocrlf = false
-	#pager = diff-so-fancy | less --tabs=4 -RFX
-  pager = delta
+	pager = delta
 
 [interactive]
   diffFilter = delta --color-only
@@ -28,7 +27,7 @@
 [alias]
 	a = add
 	br = branch
-	ci = commit -S -m
+	ci = commit -m
 	co = checkout
 	st = status -sb
 	lc = log -n 1 --pretty=format:%H --
@@ -36,33 +35,38 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	unstage = reset HEAD
 	uncommit = reset --soft HEAD^
+
 [color]
 	diff = auto
 	status = auto
 	branch = auto
-[github]
-	user = julionc
+
 [push]
 	default = simple
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+
 [format]
 	pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+
 [help]
 	autocorrect = 1
+
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-[commit]
-	gpgsign = true
+
+#[commit]
+#	gpgsign = true
+
 [credential]
 	helper = cache --timeout=3600
+
 [init]
 	defaultBranch = main
+
 [pull]
 	ff = only
-[log]
-	showSignature = true
-[gpg]
-	program = /usr/local/bin/gpg
+#[log]
+#	showSignature = true
+
+#[gpg]
+#	program = /usr/local/bin/gpg

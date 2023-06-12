@@ -1,27 +1,26 @@
 # dotfiles
 
-My config files for fish, git and so on
+Config files for fish, git, personal toolbox and so on.
+
+## Install
+
+Run this:
+
+```sh
+git clone https://github.com/julionc/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+script/bootstrap
+```
 
 ## Shell
 
 ### Fish
 
 ```properties
-brew install fish
-```
-
-You will need to add:
-
-```properties
-/usr/local/bin/fish
-```
-
-to /etc/shells.
-
-To make fish your default shell. Run:
-
-```properties
-chsh -s /usr/local/bin/fish
+brew install fish  
+curl -L https://get.oh-my.fish | fish
+sudo bash -c 'echo $(which fish) >> /etc/shells'
+chsh -s $(which fish)
 ```
 
 # Mac OSX
@@ -43,4 +42,7 @@ See `osx/readme.md`.
 - [Copy All Urls](https://chrome.google.com/webstore/detail/copy-all-urls/djdmadneanknadilpjiknlnanaolmbfk)
 - [YouTube NonStop](https://chrome.google.com/webstore/detail/youtube-nonstop/nlkaejimjacpillmajjnopmpbkbnocid)
 
+## Thanks
 
+I forked from [Zach Holman](https://github.com/holman/dotfiles), which again forked from [Ryan Bates](http://github.com/ryanb)' excellent
+[dotfiles](https://github.com/ryanb/dotfiles)

@@ -1,5 +1,8 @@
 .DS_Store
 *~
 *.swp
+
+git/gitconfig.local.symlink
+
 # zsh
 zsh/private.d/**
