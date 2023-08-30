@@ -13,8 +13,7 @@ then
   # Install the correct homebrew for each OS type
   if test "$(uname)" = "Darwin"
   then
-    # if it's is not installed, then install it in a NONINTERACTIVE way
-    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   fi
 
 fi

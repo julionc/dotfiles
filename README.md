@@ -23,6 +23,8 @@ sudo bash -c 'echo $(which fish) >> /etc/shells'
 chsh -s $(which fish)
 ```
 
+Add brew binaries in fish path run the command: `fish_add_path /opt/homebrew/bin`
+
 # Mac OSX
 
 See `osx/readme.md`.
