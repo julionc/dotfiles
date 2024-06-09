@@ -43,6 +43,6 @@ set -x GPG_TTY (tty)
 starship init fish | source
 
 # asdf
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+# source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # vim: set filetype=fish:
