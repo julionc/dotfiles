@@ -1,0 +1,9 @@
+#!/bin/bash
+# vi:ft=sh
+# Adopted from https://github.com/mathiasbynens/dotfiles/blob/7d43ff6/.osx
+set -e
+
+# Set lock screen text
+[ -n "$(defaults read /Library/Preferences/com.apple.loginwindow LoginwindowText 2>/dev/null)" ] || \
+  sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText \
+  'Found this computer? Please contact Julio Napurí at julionc@gmail.com'
