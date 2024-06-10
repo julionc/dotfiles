@@ -3,6 +3,3 @@
 *.swp
 
 git/gitconfig.local.symlink
-
-# zsh
-zsh/private.d/**
