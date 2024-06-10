@@ -30,9 +30,6 @@ brew "libpq"
 brew "libxml2"
 brew "libzip"
 brew "neovim"
-brew "openssl@1.1"
-brew "nginx"
-brew "node@16"
 brew "pkg-config"
 brew "re2c"
 brew "starship"
@@ -50,7 +47,6 @@ cask "evernote"
 cask "font-fira-code"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
-cask "google-chrome"
 cask "jumpshare"
 cask "notion"
 cask "poedit"
@@ -59,12 +55,4 @@ cask "shuttle"
 cask "slack"
 cask "spotify"
 cask "stats"
-cask "tableplus"
 cask "visual-studio-code"
-mas "Adblock Plus", id: 1432731683
-mas "Amphetamine", id: 937984704
-mas "Spark", id: 1176895641
-mas "Telegram", id: 747648890
-mas "The Unarchiver", id: 425424353
-mas "WhatsApp", id: 1147396723
-mas "Xcode", id: 497799835
