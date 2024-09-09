@@ -20,6 +20,10 @@ brew "bison"
 brew "freetype"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Core application library for C
 brew "glib"
 # Linux virtual machines
@@ -48,6 +52,8 @@ brew "git-delta"
 brew "git-extras"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Improved top (interactive process viewer)
 brew "htop"
 # Image manipulation library
@@ -58,8 +64,6 @@ brew "libedit"
 brew "libiconv"
 # Postgres C API library
 brew "libpq"
-# GNOME XML library
-brew "libxml2"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
 # Fast, highly customisable system info script
@@ -68,10 +72,10 @@ brew "neofetch"
 brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node"
-# Manage compile and link flags for libraries
-brew "pkg-config"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# Easily download, build, install, upgrade, and uninstall Python packages
+brew "python-setuptools"
 # Generate C-based recognizers from regular expressions
 brew "re2c"
 # Cross-shell prompt for astronauts
@@ -84,6 +88,8 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Image processing library
+brew "vips"
 # HTTP benchmarking tool
 brew "wrk"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -92,8 +98,6 @@ brew "zellij"
 brew "zlib"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Reminder, planner & calendar
 cask "anydo"
 # Web browser focusing on privacy
@@ -109,29 +113,30 @@ cask "font-jetbrains-mono-nerd-font"
 cask "jumpshare"
 # App to write, plan, collaborate, and get organised
 cask "notion"
-# WebKit based web browser
-cask "orion"
-# Translation editor
-cask "poedit"
 # Collaboration platform for API development
 cask "postman"
 # Kubernetes and container management on the desktop
 cask "rancher"
-# Simple shortcut menu
-cask "shuttle"
 # Music streaming service
 cask "spotify"
 # System monitor for the menu bar
 cask "stats"
+# Open-source media center
+cask "stremio"
+# Native GUI tool for relational databases
+cask "tableplus"
 # Desktop client for Telegram messenger
 cask "telegram-desktop"
 # VPN client for secure internet access and private browsing
 cask "tunnelbear"
 # Open-source code editor
 cask "visual-studio-code"
+# Native desktop client for WhatsApp
+cask "whatsapp"
 # Network protocol analyzer
 cask "wireshark"
-# Word processor for handwriting
-cask "write"
 # Multiplayer code editor
 cask "zed"
+vscode "douglaszaltron.nunjucks-vscode-extensionpack"
+vscode "eamodio.gitlens"
+vscode "stylelint.vscode-stylelint"
