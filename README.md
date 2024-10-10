@@ -12,6 +12,10 @@ cd ~/.dotfiles
 script/bootstrap
 ```
 
+```sh
+ln -nsf ~/.dotfiles/config ~/.config
+```
+
 ## Shell
 
 ### Fish
