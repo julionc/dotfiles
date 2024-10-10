@@ -9,7 +9,7 @@
 	pager = delta
 
 [interactive]
-  diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [delta]
 	features = side-by-side line-numbers decorations
@@ -54,9 +54,6 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 
-#[commit]
-#	gpgsign = true
-
 [credential]
 	helper = cache --timeout=3600
 
@@ -65,8 +62,3 @@
 
 [pull]
 	ff = only
-#[log]
-#	showSignature = true
-
-#[gpg]
-#	program = /usr/local/bin/gpg
