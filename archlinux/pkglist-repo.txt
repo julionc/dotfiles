@@ -10,6 +10,7 @@ fastfetch
 firefox
 fish
 git
+git-delta
 grim
 grub
 gst-plugin-pipewire
@@ -40,6 +41,7 @@ slurp
 smartmontools
 sof-firmware
 starship
+the_silver_searcher
 ttf-fira-code
 ttf-jetbrains-mono
 ttf-nerd-fonts-symbols
