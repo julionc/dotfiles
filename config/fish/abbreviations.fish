@@ -19,11 +19,11 @@ abbr -a caski brew install --cask
 abbr -a caskl brew list --cask
 abbr -a caskx brew uninstall --cask
 
-# abbv : youtube-dl
-alias ytd='youtube-dl'
-alias yta='youtube-dl -x --audio-quality 0 '
-alias yt2mp3='youtube-dl -x --audio-format mp3'
-alias yt2mp4='youtube-dl --format mp4'
+# abbv : yt-dlp
+alias ytd='yt-dlp'
+alias yta='yt-dlp -x --audio-quality 0 '
+alias yt2mp3='yt-dlp -x --audio-format mp3'
+alias yt2mp4='yt-dlp --format mp4'
 
 # magento2
 alias m2='php bin/magento'

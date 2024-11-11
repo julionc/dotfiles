@@ -19,6 +19,6 @@ if status is-interactive
 end
 
 # asdf
-# source /opt/homebrew/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # vim: set filetype=fish:
