@@ -1,51 +1,40 @@
-DIR="${HOME}/.dotfiles"
-CONFIG_BACKUP_DIR="${HOME}/.config-bkp"
-CONFIG_DIR="${HOME}/.config"
-
-COLOUR_GREEN=\033[0;32m
-COLOUR_RED=\033[0;31m
-COLOUR_BLUE=\033[0;34m
-END_COLOUR=\033[0m
+CONFIG_DIR = ~/.config
+BACKUP_DIR = ~/.config-bkp
 
 TITLE=\033[1;34m==>\033[0m
 ENTRY_OK=\033[32m[✔]\033[0m
 
-all:
-	@echo "Run things individually!"
+MAC_CONFIG_FOLDERS := fish
+LINUX_CONFIG_FOLDERS := fish kitty hypr
 
-.ONESHELL:
-rm_config_backup:
-	if [ -d "${CONFIG_BACKUP_DIR}" ]; then \
-		rm -r ${CONFIG_BACKUP_DIR}; \
-	fi \
+UNAME := $(shell uname)
 
-.ONESHELL:
-mkdir_config:
-	if [ -d "${CONFIG_DIR}" ]; then \
-		rm -r ${CONFIG_DIR}; \
-		mv -f ${CONFIG_DIR} ${CONFIG_BACKUP_DIR}; \
-		mkdir -p ${CONFIG_DIR}; \
-	fi \
+all: backup install
 
-clean: rm_config_backup mkdir_config
+backup:
+	@echo "Backing up $(CONFIG_DIR) to $(BACKUP_DIR)..."
+	@if [ -d $(BACKUP_DIR) ]; then \
+		echo "The backup directory already exists. Deleting..."; \
+		rm -rf $(BACKUP_DIR); \
+	fi; \
+	mv $(CONFIG_DIR) $(BACKUP_DIR); \
+	mkdir -p $(CONFIG_DIR); \
+	echo "Backup done."
 
-fresh:
-	@echo "$(COLOUR_RED)Cleaning config directory...$(END_COLOUR)"
-	$(MAKE) clean
-	
-# TODO
-arch:
-	$(MAKE) fresh
-	@echo "$(TITLE) ArchLinux Setup"
-	@echo "$(ENTRY_OK)Creating symbolic links..."
-	ln -nsf $(DIR)/fish ~/.config/fish
-	ln -nsf $(DIR)/hypr ~/.config/hypr
-	ln -nsf $(DIR)/kitty ~/.config/kitty
+install:
+	@echo "$(TITLE) $(UNAME) Setup"
+	@if [ "$(UNAME)" = "Darwin" ]; then \
+		CONFIG_FOLDERS="$(MAC_CONFIG_FOLDERS)"; \
+	else \
+		CONFIG_FOLDERS="$(LINUX_CONFIG_FOLDERS)"; \
+	fi; \
+	echo "Installing symlinks for:"; \
+	for folder in $$CONFIG_FOLDERS; do \
+		$(MAKE) create_symlink folder=$$folder; \
+	done
 
-mac:
-	$(MAKE) fresh
-	@echo "$(TITLE) Mac Setup"
-	@echo "$(ENTRY_OK)Creating symbolic links..."
-	ln -nsf $(DIR)/fish ~/.config/fish
+create_symlink:
+	@echo "$(ENTRY_OK) $(folder)"
+	@ln -nsf $(PWD)/$(folder) $(CONFIG_DIR)/$(folder)
 
-.PHONY : arch mac clean all
+.PHONY: backup install
