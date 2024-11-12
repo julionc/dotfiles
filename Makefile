@@ -1,3 +1,5 @@
+DOTFILES_DIR = ~/.dotfiles
+DOTFILES_CONFIG_DIR = ~/.dotfiles/.config
 CONFIG_DIR = ~/.config
 BACKUP_DIR = ~/.config-bkp
 
@@ -30,11 +32,15 @@ install:
 	fi; \
 	echo "Installing symlinks for:"; \
 	for folder in $$CONFIG_FOLDERS; do \
-		$(MAKE) create_symlink folder=$$folder; \
+		$(MAKE) create_config_symlink folder=$$folder; \
 	done
+
+create_config_symlink:
+	@echo "$(ENTRY_OK) $(folder)"
+	@ln -nsf $(DOTFILES_CONFIG_DIR)/$(folder) $(CONFIG_DIR)/$(folder)
 
 create_symlink:
 	@echo "$(ENTRY_OK) $(folder)"
-	@ln -nsf $(PWD)/$(folder) $(CONFIG_DIR)/$(folder)
+	@ln -nsf $(DOTFILES_DIR)/$(folder) $(CONFIG_DIR)/$(folder)
 
 .PHONY: backup install
