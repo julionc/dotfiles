@@ -18,6 +18,7 @@
 	plus-color = "#012800"
 	minus-color = "#340001"
 	syntax-theme = Monokai Extended
+	navigate = true
 
 [delta "decorations"]
     commit-decoration-style = bold yellow box ul
@@ -62,3 +63,6 @@
 
 [pull]
 	ff = only
+
+[merge]
+	conflictStyle = zdiff3
