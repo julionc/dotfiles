@@ -1,6 +1,7 @@
 ark
 base
 base-devel
+bat
 dkms
 docker
 docker-compose
@@ -10,6 +11,7 @@ efibootmgr
 egl-wayland
 eza
 fastfetch
+fd
 firefox
 fish
 git
