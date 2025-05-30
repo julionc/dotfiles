@@ -19,6 +19,7 @@ git-delta
 grub
 gst-plugin-pipewire
 htop
+hurl
 intel-ucode
 iwd
 kate
