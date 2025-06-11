@@ -1,6 +1,9 @@
 # docker
 alias dport='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}" -a'
 
+# common
+alias tldr='tldr'
+
 # Magento2
 alias m2='php bin/magento'
 alias m2up='m2 setup:upgrade && m2 setup:di:compile && m2 cache:flush'
