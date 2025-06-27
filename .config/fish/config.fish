@@ -18,3 +18,8 @@ if status is-interactive
 end
 
 # vim: set filetype=fish:
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/julionc/.lmstudio/bin
+# End of LM Studio CLI section
+
