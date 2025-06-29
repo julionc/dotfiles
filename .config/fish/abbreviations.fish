@@ -22,6 +22,7 @@ abbr -a squash git rebase -i HEAD~
 abbr -a main git checkout main
 
 # abbv : homebrew & homebrew-cask
+if type -q brew
 abbr -a brewi brew install
 abbr -a brewl brew list
 abbr -a brews brew search
@@ -30,3 +31,4 @@ abbr -a brewx brew uninstall
 abbr -a caski brew install --cask
 abbr -a caskl brew list --cask
 abbr -a caskx brew uninstall --cask
+end

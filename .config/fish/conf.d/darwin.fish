@@ -10,22 +10,6 @@ alias myls=' gls -C -F -h --color=always'
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
-# brew install zsh-completions
-export FPATH=/usr/local/share/zsh-completions:/usr/local/share/zsh/functions:$FPATH
-
-# activate gls colors
-export ZSH_DIRCOLORS="$ZSH_CONFIG/dircolors-solarized/dircolors.256dark"
-if [[ -a $ZSH_DIRCOLORS ]]; then
-    if [[ "$TERM" == *256* ]]; then
-        which gdircolors > /dev/null && eval "`gdircolors -b $ZSH_DIRCOLORS`"
-    else
-        # standard colors for non-256-color terms
-        which gdircolors > /dev/null && eval "`gdircolors -b`"
-    fi
-else
-    which gdircolors > /dev/null && eval "`gdircolors -b`"
-fi
-
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"

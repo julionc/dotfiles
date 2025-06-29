@@ -16,16 +16,6 @@ alias yta='youtube-dl -x --audio-quality 0 '
 alias yt2mp3='youtube-dl -x --audio-format mp3'
 alias yt2mp4='youtube-dl --format mp4 --max-quality mp4'
 
-# global {{{1
-
-alias -g L="|less"
-alias -g T="|tail"
-alias -g H="|head"
-alias -g G="|grep"
-alias -g S="|sort"
-alias -g U="|sort -u"
-alias -g N="&>/dev/null"
-
 # ls {{{1
 
 #alias ls='ls -CFh --color=auto'
