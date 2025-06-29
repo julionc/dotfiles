@@ -37,7 +37,7 @@ brew bundle install
 ## Using Brew Bundle to Backup and Restore Mac App Store
 
 ```properties
-brew bundle dump --force
+brew bundle dump --force --no-vscode
 # or
 brew bundle dump --describe --force
 ```
