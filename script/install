@@ -2,9 +2,129 @@
 #
 # Run all dotfiles installers.
 
+#!/usr/bin/env bash
+
+# ── Dotfiles Installer ───────────────────────────────────────────────
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
+
 set -e
 
-cd "$(dirname $0)"/..
+# ── Colors ───────────────────────────────────────────────────────────
 
-# find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+SWITCH="\033["
+RED="${SWITCH}0;31m"
+GREEN="${SWITCH}0;32m"
+YELLOW="${SWITCH}1;33m"
+NORMAL="${SWITCH}0m"
+
+# ── UI Helpers ───────────────────────────────────────────────────────
+
+info () {
+  printf "\r${YELLOW}⚙ $1${NORMAL}\n"
+}
+
+success () {
+  printf "\r${GREEN}✓ $1${NORMAL}\n"
+}
+
+error () {
+  printf "\r${RED}✖ $1${NORMAL}\n"
+  exit 1
+}
+
+suggestion () {
+  [[ "$PLATFORM" == "linux" ]] && echo "→ sudo apt install $1" || echo "→ brew install $1"
+}
+
+# ── Dependency Check ─────────────────────────────────────────────────
+
+DEPENDENCIES=(git curl stow)
+
+check_dependencies () {
+  info "Checking required dependencies..."
+
+  for dep in "${DEPENDENCIES[@]}"; do
+    if ! command -v "$dep" > /dev/null; then
+      error "$dep is not installed."
+      suggestion "$dep"
+    fi
+  done
+
+  success "All dependencies are installed"
+}
+
+# ── Git Config Setup ─────────────────────────────────────────────────
+
+setup_gitconfig () {
+  if [[ ! -f .gitconfig.local ]]; then
+    info "Setting up Git local configuration..."
+
+    git_credential="cache"
+    [[ "$PLATFORM" == "darwin" ]] && git_credential="osxkeychain"
+
+    printf " - GitHub author name: "
+    read -r git_authorname
+    printf " - GitHub email: "
+    read -r git_authoremail
+    printf " - GPG key (optional): "
+    read -r git_gpgkey
+
+    sed -e "s/AUTHORNAME/$git_authorname/g" \
+        -e "s/AUTHOREMAIL/$git_authoremail/g" \
+        -e "s/SIGNINGKEY/$git_gpgkey/g" \
+        -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
+        .gitconfig.local.example > .gitconfig.local
+
+    success ".gitconfig.local has been generated"
+  else
+    info ".gitconfig.local already exists"
+  fi
+}
+
+# ── Dotfiles Symlinking ──────────────────────────────────────────────
+
+stow_dotfiles () {
+  info "Linking dotfiles using stow..."
+
+  stow -v .
+
+#   if [[ "$PLATFORM" == "linux" ]]; then
+#     [[ -d linux ]] && stow linux
+#   elif [[ "$PLATFORM" == "darwin" ]]; then
+#     [[ -d osx ]] && stow osx
+#   fi
+
+  success "Dotfiles linked successfully"
+}
+
+
+# ── Run Installers ────────────────────────────────────────────────────
+
+run_installers () {
+  info "Running installers..."
+
+  cd "$(dirname $0)"/..
+
+  # find the installers and run them iteratively
+  find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+
+  success "Installers complete successfully"
+}
+
+# ── Main ─────────────────────────────────────────────────────────────
+
+main () {
+  check_dependencies
+  setup_gitconfig
+  stow_dotfiles
+  # run_installers
+
+  echo ""
+  success "Installation complete"
+  info "Start a new shell session to apply changes"
+}
+
+main

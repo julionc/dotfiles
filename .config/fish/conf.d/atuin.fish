@@ -2,5 +2,7 @@
 if type -q atuin
     atuin init fish | source
 else
-    perror "atuin is not installed"
+    set_color red
+    echo "atuin is not installed" >&2
+    set_color normal
 end

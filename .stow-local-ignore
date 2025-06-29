@@ -1,0 +1,16 @@
+/.DS_Store
+/*~
+/*.swp
+/aliases.d
+/archlinux
+/brew
+/osx
+/script
+/Makefile
+/README.md
+/.git
+/.gitconfig.local.example
+/*.md
+/*.backup
+/*.example
+.git*
