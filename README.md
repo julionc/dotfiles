@@ -9,7 +9,6 @@ Run:
 ```sh
 git clone https://github.com/julionc/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-script/bootstrap
 make
 ```
 
