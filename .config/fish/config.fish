@@ -13,14 +13,11 @@ set -gx PATH $GOPATH/bin $PATH
 set -gx PNPM_HOME $HOME/.local/share/pnpm
 set -gx PATH $PNPM_HOME $PATH
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/julionc/.lmstudio/bin
-# End of LM Studio CLI section
+# LM Studio CLI
+set -gx PATH $PATH $HOME/.lmstudio/bin
 
+# Local secrets
 if status is-interactive
-    source $XDG_CONFIG_HOME/fish/abbreviations.fish
-    source $XDG_CONFIG_HOME/fish/alias.fish
-
     if test -e $HOME/.secrets/config.fish.local
         source $HOME/.secrets/config.fish.local
     end
