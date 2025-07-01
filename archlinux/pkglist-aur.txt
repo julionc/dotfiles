@@ -1,9 +1,11 @@
 asdf-vm
 asdf-vm-debug
 brave-bin
-hoppscotch-bin
+cursor-bin
+librewolf-bin
+postman-bin
 spotify
-visual-studio-code-bin
 windsurf
 yay
 yay-debug
+zen-browser-bin
