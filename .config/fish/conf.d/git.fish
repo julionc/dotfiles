@@ -5,8 +5,6 @@ alias gp='git pull'
 alias gl='git log --oneline'
 
 
-abbr -a g git
-abbr -a ga 'git add .'
 abbr -a gci 'git ci'
 abbr -a gco 'git co'
 abbr -a gst 'git status -sb'
