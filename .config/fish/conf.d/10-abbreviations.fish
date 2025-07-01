@@ -21,11 +21,11 @@ end
 
 # abbv : pacman & yay
 if type -q pacman
-    abbr -a paci sudo pacman -S
-    abbr -a pacf sudo pacman -Si
+    abbr -a paci sudo pacman --noconfirm -S
+    abbr -a pacif sudo pacman -Si
     abbr -a pacl sudo pacman -Qe
     abbr -a pacs sudo pacman -Ss
     abbr -a pacx sudo pacman -R
-    abbr -a yayi sudo yay -S
-    abbr -a yayx sudo yay -R
+    abbr -a yayi yay --noconfirm --batchinstall -S
+    abbr -a yayx yay --noconfirm --batchinstall -R
 end
