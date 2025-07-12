@@ -4,13 +4,13 @@ base
 base-devel
 bat
 bluez-utils
-code
 ctop
 dkms
 docker
 docker-compose
 dolphin
 dosfstools
+dragon
 efibootmgr
 egl-wayland
 eza
@@ -19,10 +19,12 @@ fd
 firefox
 fish
 fzf
+ghostty
 git
 git-delta
 grub
 gst-plugin-pipewire
+hl
 htop
 hurl
 intel-ucode
@@ -34,6 +36,7 @@ kdiff3
 kitty
 konsole
 ksudoku
+libde265
 libpulse
 linux
 linux-firmware
@@ -67,5 +70,6 @@ wireless_tools
 wireplumber
 xdg-utils
 xorg-xinit
+yt-dlp
 zoxide
 zram-generator
