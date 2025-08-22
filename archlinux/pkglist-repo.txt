@@ -4,7 +4,9 @@ base
 base-devel
 bat
 bluez-utils
+btop
 ctop
+devtools
 dkms
 docker
 docker-compose
@@ -32,6 +34,7 @@ iwd
 kalk
 kate
 kblocks
+kdenlive
 kdiff3
 kitty
 konsole
