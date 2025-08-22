@@ -3,10 +3,6 @@ alias dport='docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}
 alias drmcons='docker rm "$(docker ps -a -q)"'
 alias dlogs='docker logs --follow --tail 100'
 
-# common
-alias tldr='tldr'
-alias t='ctags -R'
-
 # yt-dlp
 alias ytd='yt-dlp'
 alias yta='yt-dlp -x --audio-quality 0 '

@@ -26,6 +26,10 @@ if type -q pacman
     abbr -a pacl sudo pacman -Qe
     abbr -a pacs sudo pacman -Ss
     abbr -a pacx sudo pacman -R
+    # abbv : yay
     abbr -a yayi yay --noconfirm --batchinstall -S
+    abbr -a yayif yay -Si
+    abbr -a yayl yay -Qqem
+    abbr -a yays yay -Ss
     abbr -a yayx yay --noconfirm --batchinstall -R
 end
