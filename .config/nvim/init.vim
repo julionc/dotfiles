@@ -7,13 +7,13 @@ let s:darwin = has('mac')
 let mapleader      = ' '
 let maplocalleader = ' '
 
-let vim_plug_readme=expand('~/.vim/plugged/vim-plug/README.md')
+let vim_plug_readme=expand('~/.dotfiles/.config/nvim/plugged/vim-plug/README.md')
 if !filereadable(vim_plug_readme)
 	echo "Installing Vim-plug"
 	echo ""
 	silent !mkdir -p ~/.vim/{autoload,plugged}
-	silent !git clone --depth 1 https://github.com/junegunn/vim-plug.git ~/.vim/plugged/vim-plug
-	silent !ln -sf ~/.vim/plugged/vim-plug/plug.vim ~/.vim/autoload/plug.vim
+	silent !git clone --depth 1 https://github.com/junegunn/vim-plug.git ~/.dotfiles/.config/nvim/plugged/vim-plug
+	silent !ln -sf ~/.dotfiles/.config/nvim/plugged/vim-plug/plug.vim ~/.dotfiles/.config/nvim/autoload/plug.vim
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -60,6 +60,7 @@ Plug 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plug 'sickill/vim-monokai'
 Plug 'junegunn/seoul256.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'Mofiqul/dracula.nvim'
 
 " Ruby
 Plug 'ngmy/vim-rubocop'
@@ -83,7 +84,8 @@ set background=light
 "colorscheme monokai
 "colorscheme Tomorrow-Night-Eighties
 "colorscheme seoul256
-colorscheme onedark
+"colorscheme onedark
+colorscheme dracula
 
 " Mappings - Faster scrolling
 nmap J 10j
