@@ -51,7 +51,9 @@ neovim
 network-manager-applet
 networkmanager
 nvidia-dkms
+okular
 os-prober
+pacman-contrib
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -63,6 +65,7 @@ sof-firmware
 starship
 stow
 the_silver_searcher
+tldr
 tree
 ttf-fira-code
 ttf-jetbrains-mono

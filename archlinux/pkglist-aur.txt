@@ -1,6 +1,5 @@
 asdf-vm
 asdf-vm-debug
-brave-bin
 cursor-bin
 librewolf-bin
 postman-bin
