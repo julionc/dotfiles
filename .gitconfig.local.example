@@ -2,9 +2,12 @@
 	name = AUTHORNAME
 	email = AUTHOREMAIL
 	signingkey = SIGNINGKEY
+
 [commit]
 	gpgSign = true
+
 [credential]
 	helper = GIT_CREDENTIAL_HELPER
+
 [tag]
 	gpgSign = true	

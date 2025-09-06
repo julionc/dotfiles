@@ -1,68 +1,76 @@
 # Local/private config goes in the include
 [include]
-    path = ~/.gitconfig.local
+  path = ~/.gitconfig.local
+
+[user]
+  # Identity configuration should go in .gitconfig.local
+  # name = Your name
+  # email = your@email.com
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
-	autocrlf = false
-	pager = delta
-
-[interactive]
-	diffFilter = delta --color-only
-
-[delta]
-	features = side-by-side line-numbers decorations
-	whitespace-error-style = 22 reverse
-	line-numbers = true
-	plus-color = "#012800"
-	minus-color = "#340001"
-	syntax-theme = Monokai Extended
-	navigate = true
-
-[delta "decorations"]
-    commit-decoration-style = bold yellow box ul
-    file-style = bold yellow ul
-    file-decoration-style = none	
-
-[alias]
-	a = add
-	br = branch
-	ci = commit -m
-	co = checkout
-	st = status -sb
-	lc = log -n 1 --pretty=format:%H --
-	ll = log --pretty=oneline --abbrev-commit --max-count=15
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	unstage = reset HEAD
-	uncommit = reset --soft HEAD^
+  editor = vim
+  excludesfile = ~/.gitignore
+  autocrlf = false
+  pager = delta
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+  diff = auto
+  status = auto
+  branch = auto
 
-[push]
-	default = simple
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  line-numbers = true
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
+  # syntax-theme = base16
+  side-by-side = false
+  file-modified-label = modified:
+  navigate = true
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+
+[alias]
+  a = add
+  br = branch
+  ci = commit -m
+  co = checkout
+  st = status -sb
+  lc = log -n 1 --pretty=format:%H --
+  ll = log --pretty=oneline --abbrev-commit --max-count=15
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
 
 [format]
-	pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta)[%an]%Creset
 
-[help]
-	autocorrect = 1
-
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-
-[credential]
-	helper = cache --timeout=3600
-
-[init]
-	defaultBranch = main
+[push]
+  default = simple
 
 [pull]
-	ff = only
+  ff = only
 
 [merge]
-	conflictStyle = zdiff3
+  conflictStyle = zdiff3
+
+[init]
+  defaultBranch = main
+
+[help]
+  autocorrect = 1
+
+[credential]
+  helper = cache --timeout=86400
+
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
