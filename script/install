@@ -84,6 +84,17 @@ setup_gitconfig () {
   fi
 }
 
+# ── Run Git submodule ---───────────────────────────────────────────────
+
+update_submodules () {
+  info "Updating git submodules..."
+
+  git submodule update --init --recursive
+  git submodule foreach --recursive git pull origin main || true
+
+  success "Git Submodules updated"
+}
+
 # ── Dotfiles Symlinking ──────────────────────────────────────────────
 
 stow_dotfiles () {
@@ -91,15 +102,8 @@ stow_dotfiles () {
 
   stow -v .
 
-#   if [[ "$PLATFORM" == "linux" ]]; then
-#     [[ -d linux ]] && stow linux
-#   elif [[ "$PLATFORM" == "darwin" ]]; then
-#     [[ -d osx ]] && stow osx
-#   fi
-
   success "Dotfiles linked successfully"
 }
-
 
 # ── Run Installers ────────────────────────────────────────────────────
 
@@ -119,6 +123,7 @@ run_installers () {
 main () {
   check_dependencies
   setup_gitconfig
+  update_submodules
   stow_dotfiles
   # run_installers
 

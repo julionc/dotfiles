@@ -9,6 +9,7 @@
 /README.md
 /.git
 /.gitconfig.local.example
+/.gitmodules
 /*.md
 /*.backup
 /*.example
