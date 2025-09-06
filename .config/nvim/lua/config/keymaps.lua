@@ -19,15 +19,8 @@ vim.api.nvim_create_user_command("WQ", "wq", {})
 vim.api.nvim_create_user_command("Wq", "wq", {})
 
 -- Plugins
-map("n", "<leader>n", ":NERDTreeToggle<CR>")
-map("n", "<C-p>", ":CtrlP<CR>")
-map("n", "<leader>8", ":TagbarToggle<CR>")
-map("n", "<F8>", ":TagbarToggle<CR>")
-map("n", "<C-t>", ":TagbarToggle<CR>")
-
--- vim-test
-map("n", "<leader>t", ":TestNearest<CR>", { silent = true })
-map("n", "<leader>T", ":TestFile<CR>", { silent = true })
-map("n", "<leader>a", ":TestSuite<CR>", { silent = true })
-map("n", "<leader>l", ":TestLast<CR>", { silent = true })
-map("n", "<leader>g", ":TestVisit<CR>", { silent = true })
+map("n", "<leader>e", ":Neotree toggle<CR>", { desc = "Toggle file explorer" })
+map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files" })
+map("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep" })
+map("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find buffers" })
+map("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags" })
