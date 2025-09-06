@@ -20,6 +20,7 @@ fastfetch
 fd
 firefox
 fish
+fisher
 fzf
 ghostty
 git
@@ -39,6 +40,8 @@ kdiff3
 kitty
 konsole
 ksudoku
+lazydocker
+lazygit
 libde265
 libpulse
 linux

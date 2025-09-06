@@ -1,7 +1,6 @@
 asdf-vm
 asdf-vm-debug
 cursor-bin
-librewolf-bin
 postman-bin
 spotify
 visual-studio-code-bin
