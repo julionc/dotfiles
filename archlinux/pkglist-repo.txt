@@ -37,6 +37,7 @@ kate
 kblocks
 kdenlive
 kdiff3
+kfind
 kitty
 konsole
 ksudoku

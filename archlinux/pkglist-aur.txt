@@ -1,6 +1,7 @@
 asdf-vm
 asdf-vm-debug
 cursor-bin
+datagrip
 postman-bin
 spotify
 visual-studio-code-bin
