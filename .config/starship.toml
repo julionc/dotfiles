@@ -1,3 +1,11 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[character]
+success_symbol = '[➜](bold green)'
+
+[package]
+disabled = true
+
 # Use the color palette
 palette = "dracula"
 
