@@ -33,3 +33,9 @@ if type -q pacman
     abbr -a yays yay -Ss
     abbr -a yayx yay --noconfirm --batchinstall -R
 end
+
+# git
+# abbr --add --command git --regex br     -- git-br     branch
+abbr --add --command git --regex ci     -- git-ci     commit -m
+abbr --add --command git --regex co     -- git-co     checkout
+abbr --add --command git --regex st     -- git-st     status -sb
