@@ -1,0 +1,157 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+#!/usr/bin/env bash
+
+# ── Dotfiles Installer ─────────────────────────────────────────────
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
+
+set -e
+
+# ── Colors ─────────────────────────────────────────────────────────
+
+SWITCH="\033["
+RED="${SWITCH}0;31m"
+GREEN="${SWITCH}0;32m"
+YELLOW="${SWITCH}1;33m"
+NORMAL="${SWITCH}0m"
+
+# ── UI Helpers ─────────────────────────────────────────────────────
+
+info () {
+  printf "\r${YELLOW}⚙ $1${NORMAL}\n"
+}
+
+success () {
+  printf "\r${GREEN}✓ $1${NORMAL}\n"
+}
+
+error () {
+  printf "\r${RED}✖ $1${NORMAL}\n"
+  exit 1
+}
+
+suggestion () {
+  [[ "$PLATFORM" == "linux" ]] && echo "→ sudo apt install $1" || echo "→ brew install $1"
+}
+
+# ── Dependency Check ───────────────────────────────────────────────
+
+DEPENDENCIES=(git curl stow)
+
+check_dependencies () {
+  info "Checking required dependencies..."
+
+  for dep in "${DEPENDENCIES[@]}"; do
+    if ! command -v "$dep" > /dev/null; then
+      error "$dep is not installed."
+      suggestion "$dep"
+    fi
+  done
+
+  success "All dependencies are installed"
+}
+
+# ── Git Config Setup ───────────────────────────────────────────────
+
+setup_gitconfig () {
+  if [[ ! -f .gitconfig.local ]]; then
+    info "Setting up Git local configuration..."
+
+    git_credential="cache"
+    [[ "$PLATFORM" == "darwin" ]] && git_credential="osxkeychain"
+
+    printf " - GitHub author name: "
+    read -r git_authorname
+    printf " - GitHub email: "
+    read -r git_authoremail
+    printf " - GPG key (optional): "
+    read -r git_gpgkey
+
+    sed -e "s/AUTHORNAME/$git_authorname/g" \
+        -e "s/AUTHOREMAIL/$git_authoremail/g" \
+        -e "s/SIGNINGKEY/$git_gpgkey/g" \
+        -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
+        .gitconfig.local.example > .gitconfig.local
+
+    success ".gitconfig.local has been generated"
+  else
+    info ".gitconfig.local already exists"
+  fi
+}
+
+# ── Run Git submodule ---───────────────────────────────────────────
+
+update_submodules () {
+  info "Updating git submodules..."
+
+  git submodule update --init --recursive
+  git submodule foreach --recursive git pull origin main || true
+
+  success "Git Submodules updated"
+}
+
+# ── Dotfiles Symlinking ────────────────────────────────────────────
+
+stow_dotfiles () {
+  info "Linking dotfiles using stow..."
+
+  stow -v .
+
+  success "Dotfiles linked successfully"
+}
+
+# ── Run Setups ─────────────────────────────────────────────────────
+
+run_setup () {
+  if [[ -f .setup ]]; then
+    info "Setup already completed, skipping."
+    return
+  fi
+
+  info "Running setup for osx and archlinux..."
+
+  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
+    make -C osx setup
+  elif [[ "$PLATFORM" == "linux" && -d archlinux ]]; then
+    make -C archlinux setup
+  fi
+
+  touch .setup
+  success "Setup completed successfully"
+}
+
+# ── Run Installers ─────────────────────────────────────────────────
+
+run_installers () {
+  info "Running installers..."
+
+  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
+    make -C osx install
+  elif [[ "$PLATFORM" == "linux" && -d archlinux ]]; then
+    make -C archlinux install
+  fi
+
+  success "Installers complete successfully"
+}
+
+# ── Main ───────────────────────────────────────────────────────────
+
+main () {
+  check_dependencies
+  setup_gitconfig
+  update_submodules
+  stow_dotfiles
+  run_setup
+  run_installers
+
+  echo ""
+  success "Installation complete"
+  info "Start a new shell session to apply changes"
+}
+
+main

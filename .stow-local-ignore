@@ -11,6 +11,5 @@
 /.gitconfig.local.example
 /.gitmodules
 /*.md
-/*.backup
-/*.example
+/*.setup
 .git*

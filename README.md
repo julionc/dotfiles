@@ -2,6 +2,10 @@
 
 Config files for fish, git, personal toolbox and so on.
 
+## Requeriments
+
+Install dependencies: git, curl, stow
+
 ## Install
 
 Run:
