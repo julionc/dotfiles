@@ -1,4 +1,3 @@
-function mkcd -d "Create and open a directory"
-    mkdir -p $argv
-    and cd $argv
+function mkcd --description "Create and enter a directory"
+    mkdir -p $argv[1]; and cd $argv[1]
 end
