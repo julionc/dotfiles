@@ -20,3 +20,7 @@ $RECYCLE.BIN/
 # dotfiles
 .gitconfig.local
 .setup
+
+# zed editor
+*.mdb
+
