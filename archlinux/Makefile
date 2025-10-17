@@ -17,6 +17,22 @@ dump: ## Export current package lists (repo + AUR)
 	sudo pacman -Qqen > pkglist-repo.txt
 	sudo pacman -Qqem > pkglist-aur.txt
 
+# install: ## Install packages from saved lists
+# 	grep -vE '^\s*#|^\s*$$' pkglist-repo.txt | sudo pacman -S --
+# 	grep -vE '^\s*#|^\s*$$' pkglist-aur.txt | yay --noconfirm --batchinstall -S --
+
 install: ## Install packages from saved lists
-	grep -vE '^\s*#|^\s*$$' pkglist-repo.txt | sudo pacman -S --
-	grep -vE '^\s*#|^\s*$$' pkglist-aur.txt | yay --noconfirm --batchinstall -S --
+	@if [ -s pkglist-repo.txt ]; then \
+		echo "Installing repo packages..."; \
+		grep -vE '^\s*#|^\s*$$' pkglist-repo.txt | sudo pacman -S --needed --noconfirm -; \
+	else \
+		echo "No repo packages to install."; \
+	fi
+	@if [ -s pkglist-aur.txt ]; then \
+		echo "Installing AUR packages..."; \
+		grep -vE '^\s*#|^\s*$$' pkglist-aur.txt | yay --needed --noconfirm -S -; \
+	else \
+		echo "No AUR packages to install."; \
+	fi
+
+
