@@ -104,5 +104,10 @@
 [diff]
   conflictstyle = zdiff3
   algorithm = histogram
+
 [checkout]
 	defaultRemote = origin
+
+[fetch]
+  prune = true
+
