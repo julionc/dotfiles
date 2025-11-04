@@ -20,6 +20,8 @@ set -gx PATH $PNPM_HOME $PATH
 set -gx PATH $PATH /Users/julionc/.lmstudio/bin
 # End of LM Studio CLI section
 
+set -gx GIT_WORKSPACE $HOME/projects
+
 # Local secrets
 if test -f "$HOME/.secrets/config.fish.local"
     source "$HOME/.secrets/config.fish.local"
