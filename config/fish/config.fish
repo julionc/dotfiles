@@ -16,15 +16,15 @@ set -gx PATH $GOPATH/bin $PATH
 set -gx PNPM_HOME $HOME/.local/share/pnpm
 set -gx PATH $PNPM_HOME $PATH
 
+set -gx GIT_WORKSPACE $HOME/projects
+
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/julionc/.lmstudio/bin
 # End of LM Studio CLI section
 
-set -gx GIT_WORKSPACE $HOME/projects
-
 # Local secrets
-if test -f "$HOME/.secrets/config.fish.local"
-    source "$HOME/.secrets/config.fish.local"
+if test -f "$HOME/.secrets/config.local.fish"
+    source "$HOME/.secrets/config.local.fish"
 end
 
 # vim: set filetype=fish:
