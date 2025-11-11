@@ -45,7 +45,7 @@ abbr --add --command git --regex st     -- git-st     status -sb
 abbr --add --command git --regex ws     -- git-ws     workspace
 
 # git workspace
-abbr -a gw git-workspace
+abbr -a gws git-workspace
 
 # yt-dlp
 abbr -a yt2mp3 'yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" --no-playlist'
