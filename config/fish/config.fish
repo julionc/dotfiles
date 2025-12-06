@@ -19,12 +19,15 @@ set -gx PATH $PNPM_HOME $PATH
 set -gx GIT_WORKSPACE $HOME/projects
 
 # Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/julionc/.lmstudio/bin
+set -gx PATH $PATH $HOME/.lmstudio/bin
 # End of LM Studio CLI section
 
 # Local secrets
 if test -f "$HOME/.secrets/config.local.fish"
     source "$HOME/.secrets/config.local.fish"
 end
+
+# Added by Antigravity
+fish_add_path $HOME/.antigravity/antigravity/bin
 
 # vim: set filetype=fish:
