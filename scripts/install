@@ -59,7 +59,7 @@ check_dependencies () {
 # ── Git Config Setup ───────────────────────────────────────────────
 
 setup_gitconfig () {
-  if [[ ! -f .gitconfig.local ]]; then
+  if [[ ! -f home/.gitconfig.local ]]; then
     info "Setting up Git local configuration..."
 
     git_credential="cache"
@@ -76,7 +76,7 @@ setup_gitconfig () {
         -e "s/AUTHOREMAIL/$git_authoremail/g" \
         -e "s/SIGNINGKEY/$git_gpgkey/g" \
         -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
-        .gitconfig.local.example > .gitconfig.local
+        home/.gitconfig.local.example > home/.gitconfig.local
 
     success ".gitconfig.local has been generated"
   else
@@ -100,7 +100,8 @@ update_submodules () {
 stow_dotfiles () {
   info "Linking dotfiles using stow..."
 
-  stow -v .
+  stow -v -t "$HOME/.config" config
+  stow -v -t "$HOME" home
 
   success "Dotfiles linked successfully"
 }
