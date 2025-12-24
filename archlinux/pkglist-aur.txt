@@ -1,5 +1,6 @@
 cursor-bin
 datagrip
+git-extras
 postman-bin
 spotify
 ttf-atkinson-hyperlegible-next-mono

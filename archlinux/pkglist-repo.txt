@@ -46,9 +46,11 @@ libpulse
 linux
 linux-firmware
 linux-headers
+man-db
 mise
 mkcert
 mtools
+namcap
 nano
 neovim
 network-manager-applet
@@ -78,6 +80,7 @@ wget
 wireless_tools
 wireplumber
 wl-clipboard
+xclip
 xdg-utils
 xorg-xinit
 yt-dlp
