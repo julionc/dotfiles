@@ -118,8 +118,10 @@ run_setup () {
 
   if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
     make -C osx setup
-  elif [[ "$PLATFORM" == "linux" && -d archlinux ]]; then
-    make -C archlinux setup
+  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
+    make -C linux/archlinux setup
+  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
+    make -C linux/cachyos setup
   fi
 
   touch .setup
@@ -133,8 +135,10 @@ run_installers () {
 
   if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
     make -C osx install
-  elif [[ "$PLATFORM" == "linux" && -d archlinux ]]; then
-    make -C archlinux install
+  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
+    make -C linux/archlinux install
+  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
+    make -C linux/cachyos install
   fi
 
   success "Installers complete successfully"
