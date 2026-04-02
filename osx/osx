@@ -7,3 +7,10 @@ set -e
 [ -n "$(defaults read /Library/Preferences/com.apple.loginwindow LoginwindowText 2>/dev/null)" ] || \
   sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText \
   'Found this computer? Please contact Julio Napurí at julionc@gmail.com'
+
+# Screencapture
+mkdir -p ~/Desktop/Screenshots
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
+defaults write com.apple.screencapture disable-shadow -bool true # Eliminate shadows in screen captures
+defaults write com.apple.screencapture type -string "png" # Set screenshot save format to PNG
+

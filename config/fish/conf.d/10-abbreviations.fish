@@ -49,5 +49,4 @@ abbr -a gws git-workspace
 
 # yt-dlp
 abbr -a yt2mp3 'yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" --no-playlist'
-abbr -a yt2mp4 'yt-dlp -t mp4 -no-playlist'
-
+abbr -a yt2mp4 'yt-dlp -f "bv*[vcodec^=avc1]+ba[acodec^=mp4a]/b[ext=mp4]" --merge-output-format mp4 --no-playlist'
