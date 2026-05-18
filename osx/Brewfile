@@ -58,6 +58,7 @@ brew "libzip"
 brew "qemu"
 brew "lima-additional-guestagents"
 brew "mac-cleanup-go"
+brew "mas"
 brew "mercurial"
 brew "mise"
 brew "mole"
@@ -68,6 +69,7 @@ brew "open-mpi"
 brew "ripgrep"
 brew "opencode"
 brew "openjdk"
+brew "php"
 brew "pnpm"
 brew "poppler"
 brew "python-setuptools"
@@ -105,7 +107,6 @@ cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "google-gemini"
 cask "imageoptim"
-cask "jumpshare"
 cask "kiro"
 cask "kitty"
 cask "lm-studio"
@@ -129,3 +130,13 @@ cask "wireshark-app"
 cask "yaak"
 cask "zed"
 cask "zen"
+mas "AdBlock", id: 1402042596
+mas "DaVinci Resolve", id: 571213070
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "The Unarchiver", id: 425424353
+mas "Xcode", id: 497799835
+npm "corepack"
