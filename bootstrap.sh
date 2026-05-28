@@ -2,15 +2,24 @@
 #
 # Run all dotfiles installers.
 
-#!/usr/bin/env bash
+# ── Rooting  ────────────────────────────────────────────────────────
+
+export HISTIGNORE='*sudo -S*'
+
+set -euo pipefail
+
+read -rs -p "Password: " SUDO_PASSWORD
+echo "${SUDO_PASSWORD}" | sudo -S -v &>/dev/null || {
+  echo "Error: Invalid sudo password or no sudo privileges."
+  exit 1
+}
 
 # ── Dotfiles Installer ─────────────────────────────────────────────
 
-cd "$(dirname "$0")/.."
+REPO_URL="https://github.com/julionc/dotfiles.git"
+DOTFILES_DIR="${HOME}/.dotfiles"
 DOTFILES_ROOT=$(pwd -P)
 PLATFORM="$(uname -s | tr '[:upper:]' '[:lower:]')"
-
-set -e
 
 # ── Colors ─────────────────────────────────────────────────────────
 
@@ -54,6 +63,18 @@ check_dependencies () {
   done
 
   success "All dependencies are installed"
+}
+
+# ── Git Clone ───────────────────────────────────────────────
+
+git_clone_dotfiles() {
+  if [[ -d "$DOTFILES_DIR/.git" ]]; then
+    info "Updating dotfiles..."
+    git -C "$DOTFILES_DIR" pull --rebase
+  else
+    info "Cloning dotfiles..."
+    git clone "$REPO_URL" "$DOTFILES_DIR"
+  fi
 }
 
 # ── Git Config Setup ───────────────────────────────────────────────
@@ -100,15 +121,15 @@ update_submodules () {
 stow_dotfiles () {
   info "Linking dotfiles using stow..."
 
-  stow -v -t "$HOME/.config" config
-  stow -v -t "$HOME" home
+  stow -v -t "$HOME/.config" config --adopt
+  stow -v -t "$HOME" home --adopt
 
   success "Dotfiles linked successfully"
 }
 
 # ── Run Setups ─────────────────────────────────────────────────────
 
-run_setup () {
+configure_system () {
   if [[ -f .setup ]]; then
     info "Setup already completed, skipping."
     return
@@ -130,7 +151,7 @@ run_setup () {
 
 # ── Run Installers ─────────────────────────────────────────────────
 
-run_installers () {
+install_packages () {
   info "Running installers..."
 
   if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
@@ -147,12 +168,13 @@ run_installers () {
 # ── Main ───────────────────────────────────────────────────────────
 
 main () {
+  git_clone_dotfiles
   check_dependencies
   setup_gitconfig
   update_submodules
   stow_dotfiles
-  run_setup
-  run_installers
+  configure_system
+  install_packages
 
   echo ""
   success "Installation complete"

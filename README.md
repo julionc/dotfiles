@@ -11,9 +11,7 @@ Install dependencies: git, curl, stow
 Run:
 
 ```sh
-git clone https://github.com/julionc/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-make
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/julionc/dotfiles/main/bootstrap.sh)"
 ```
 
 ## Shell
