@@ -1,4 +1,4 @@
 .PHONY: install
 
 install:
-	sh scripts/install
+	sh boostrap.sh

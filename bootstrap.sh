@@ -48,15 +48,54 @@ suggestion () {
   [[ "$PLATFORM" == "linux" ]] && echo "→ sudo apt install $1" || echo "→ brew install $1"
 }
 
+# ── Run Setups ─────────────────────────────────────────────────────
+
+configure_system () {
+  if [[ -f .setup ]]; then
+    info "Setup already completed, skipping."
+    return
+  fi
+
+  info "Running system setup for the current platform..."
+
+  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
+    make -C osx setup
+  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
+    make -C linux/archlinux setup
+  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
+    make -C linux/cachyos setup
+  fi
+
+  touch .setup
+  success "Setup completed successfully"
+}
+
+# ── Run Installers ─────────────────────────────────────────────────
+
+install_packages () {
+  info "Running installers..."
+
+  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
+    make -C osx install
+  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
+    make -C linux/archlinux install
+  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
+    make -C linux/cachyos install
+  fi
+
+  success "Installers complete successfully"
+}
+
 # ── Dependency Check ───────────────────────────────────────────────
 
-DEPENDENCIES=(git curl stow)
+DEPENDENCIES=(git stow)
 
 check_dependencies () {
   info "Checking required dependencies..."
 
   for dep in "${DEPENDENCIES[@]}"; do
-    if ! command -v "$dep" > /dev/null; then
+    # if ! command -v "$dep" > /dev/null; then
+    if ! command -v "$dep" > /dev/null 2>&1; then
       error "$dep is not installed."
       suggestion "$dep"
     fi
@@ -105,9 +144,9 @@ setup_gitconfig () {
   fi
 }
 
-# ── Run Git submodule ---───────────────────────────────────────────
+# ── Run Git submodule ───────────────────────────────────────────────
 
-update_submodules () {
+update_git_submodules () {
   info "Updating git submodules..."
 
   git submodule update --init --recursive
@@ -127,54 +166,35 @@ stow_dotfiles () {
   success "Dotfiles linked successfully"
 }
 
-# ── Run Setups ─────────────────────────────────────────────────────
+# ── Configure User Shell ────────────────────────────────────────────
 
-configure_system () {
-  if [[ -f .setup ]]; then
-    info "Setup already completed, skipping."
-    return
+configure_user_shell () {
+  info "Configuring user shell..."
+
+  local shell_path=$(which fish 2>/dev/null)
+  if [[ -n "$shell_path" ]]; then
+    sudo chsh -s "$shell_path" "${USER}"
+    success "Shell changed to Fish"
+
+    if [[ "$PLATFORM" == "darwin" ]]; then
+      # fish_add_path /opt/homebrew/bin
+      # echo "fish_add_path /opt/homebrew/bin" > "$HOME/.config/fish/conf.d/homebrew.fish"
+      success "Homebrew path added to Fish"
+    fi
   fi
-
-  info "Running setup for osx and archlinux..."
-
-  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
-    make -C osx setup
-  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
-    make -C linux/archlinux setup
-  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
-    make -C linux/cachyos setup
-  fi
-
-  touch .setup
-  success "Setup completed successfully"
-}
-
-# ── Run Installers ─────────────────────────────────────────────────
-
-install_packages () {
-  info "Running installers..."
-
-  if [[ "$PLATFORM" == "darwin" && -d osx ]]; then
-    make -C osx install
-  elif [[ "$PLATFORM" == "linux" && -d linux/archlinux ]]; then
-    make -C linux/archlinux install
-  elif [[ "$PLATFORM" == "linux" && -d linux/cachyos ]]; then
-    make -C linux/cachyos install
-  fi
-
-  success "Installers complete successfully"
 }
 
 # ── Main ───────────────────────────────────────────────────────────
 
 main () {
-  git_clone_dotfiles
-  check_dependencies
-  setup_gitconfig
-  update_submodules
-  stow_dotfiles
   configure_system
   install_packages
+  check_dependencies
+  git_clone_dotfiles
+  setup_gitconfig
+  update_git_submodules
+  stow_dotfiles
+  configure_user_shell
 
   echo ""
   success "Installation complete"

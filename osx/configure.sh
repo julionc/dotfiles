@@ -13,4 +13,3 @@ mkdir -p ~/Desktop/Screenshots
 defaults write com.apple.screencapture location ~/Desktop/Screenshots
 defaults write com.apple.screencapture disable-shadow -bool true # Eliminate shadows in screen captures
 defaults write com.apple.screencapture type -string "png" # Set screenshot save format to PNG
-
