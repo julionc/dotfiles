@@ -14,7 +14,7 @@ clean: ## Clean up brew cache
 	brew cleanup
 
 dump: ## Dump Brewfile
-	brew bundle dump --force --no-vscode
+	brew bundle dump --force --no-vscode --no-describe
 
 install: ## Install from Brewfile
 	brew bundle
