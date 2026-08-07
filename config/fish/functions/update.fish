@@ -5,7 +5,7 @@ function update --description "Update OS"
     if test "$os" = "Darwin"
         echo "Updating macOS with Homebrew..."
         if type -q brew
-            brew update && brew upgrade && brew cleanup
+            brew update && brew upgrade --no-ask && brew cleanup
         else
             echo "Homebrew is not installed."
         end
