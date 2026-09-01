@@ -1,0 +1,10 @@
+os:
+  edit: 'nvim'
+git:
+  diffRenderers:
+    - colorArg: always
+      command: delta --dark --paging=never --24-bit-color=always --color-only
+gui:
+  theme:
+    selectedLineBgColor:
+      - "#383838"
