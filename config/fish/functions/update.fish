@@ -21,5 +21,7 @@ function update --description "Update OS"
     else
         echo "Unsupported operating system: $os"
     end
+
+    rm -f $__fish_cache_dir/{starship,atuin,zoxide,fzf}_init.fish
 end
 

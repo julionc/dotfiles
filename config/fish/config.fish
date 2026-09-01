@@ -18,10 +18,6 @@ set -gx PATH $PNPM_HOME $PATH
 
 set -gx GIT_WORKSPACE $HOME/projects
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH $HOME/.lmstudio/bin
-# End of LM Studio CLI section
-
 # Local secrets
 if test -f "$HOME/.secrets/config.local.fish"
     source "$HOME/.secrets/config.local.fish"

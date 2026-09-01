@@ -37,16 +37,14 @@ if type -q yay
   abbr -a yayx yay --noconfirm --batchinstall -R
 end
 
-# git
-# abbr --add --command git --regex br     -- git-br     branch
-abbr --add --command git --regex ci     -- git-ci     commit -m
-abbr --add --command git --regex co     -- git-co     checkout
-abbr --add --command git --regex st     -- git-st     status -sb
-abbr --add --command git --regex ws     -- git-ws     workspace
-
 # git workspace
 abbr -a gws git-workspace
 
 # yt-dlp
 abbr -a yt2mp3 'yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" --no-playlist'
 abbr -a yt2mp4 'yt-dlp -f "bv*[vcodec^=avc1]+ba[acodec^=mp4a]/b[ext=mp4]" --merge-output-format mp4 --no-playlist'
+
+# docker
+abbr -a dport 'docker container ls --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}" -a'
+abbr -a drmcons 'docker rm "$(docker ps -a -q)"'
+abbr -a dlogs 'docker logs --follow --tail 100'

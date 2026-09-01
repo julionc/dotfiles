@@ -1,5 +1,6 @@
 # https://github.com/eza-community/eza
-if not type -q eza
+status is-interactive; or exit
+if not command -q eza
     set_color red
     echo "eza is not installed" >&2
     set_color normal
