@@ -51,11 +51,12 @@
       "manage.newUI.sort": "title,asc",
       "manage.searchMode": "meta",
       "editor.options": {},
-      "editor.toc.expanded": false,
+      "editor.toc.expanded": true,
       "editor.options.expanded": true,
       "editor.options.style.expanded": true,
+      "editor.general.expanded": true,
       "editor.lint.expanded": true,
-      "editor.publish.expanded": true,
+      "editor.publish.expanded": false,
       "editor.lineWrapping": true,
       "editor.smartIndent": true,
       "editor.indentWithTabs": false,
@@ -77,8 +78,10 @@
         "space_around_cmp": false
       },
       "editor.beautify.hotkey": "",
-      "editor.lintDelay": 300,
+      "editor.toggle.hotkey": "Alt-Enter",
+      "editor.toggle.save": false,
       "editor.linter": "csslint",
+      "editor.linter.on": true,
       "editor.lintReportDelay": 500,
       "editor.matchHighlight": "token",
       "editor.autoCloseBrackets": true,
@@ -92,7 +95,7 @@
       "editor.livePreview.delay": 0.2,
       "editor.targetsFirst": true,
       "editor.colorpicker": true,
-      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hexUppercase": 0,
       "editor.colorpicker.hotkey": "",
       "editor.colorpicker.color": "",
       "editor.colorpicker.maxHeight": 300,
@@ -114,6 +117,7 @@
       "popup.sidePanel.finder": false,
       "popup.sidePanel.manager": false,
       "popup.sidePanel.options": true,
+      "popup.toggler.expanded": false,
       "popupWidth": 246,
       "popupWidthMax": 280,
       "updateInterval": 24,
@@ -145,7 +149,7 @@
     "description": "Grupo Deltron CSS Page fixes",
     "updateDate": 1782797183451,
     "_id": "f2b3d80b-bde7-4282-8600-e9cbb2e42995",
-    "_rev": 1782250041972,
+    "_rev": 1782797183451,
     "id": 3
   },
   {
@@ -169,7 +173,7 @@
     "updateUrl": "https://userstyles.world/api/style/28830.user.css",
     "originalDigest": "6ccca776315b1051a783ae7e1850722386227d40",
     "_id": "660824c7-39d1-434f-ac74-d5a9a261bf5d",
-    "_rev": 1782594278267,
+    "_rev": 1782718560000,
     "url": "https://userstyles.world/style/28830",
     "installationUrl": "https://userstyles.world/style/28830",
     "id": 4,
@@ -202,6 +206,31 @@
     "_rev": 1782797772574,
     "url": "https://uso.kkx.one/style/162707",
     "installationUrl": "https://uso.kkx.one/style/162707",
-    "id": 8
+    "id": 8,
+    "etag": "W/\"de4f0bd8a1c9f468f5d9ced1e1a5de0c0e9c321a5c2b51e9562d56260d6be60b\""
+  },
+  {
+    "enabled": true,
+    "installDate": 1783797338963,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "name": "reddit.com",
+    "sourceCode": "/* ==UserStyle==\n@name           reddit.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"reddit.com\") {\n    \n    .text-14-scalable {\n      font-size: 1.123rem;\n      line-height: 1.4rem;\n    }\n}",
+    "usercssData": {
+      "name": "reddit.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "_rev": 1784222458158,
+    "updateDate": 1784222458158,
+    "_id": "f11fbc60-75d4-4ed7-8099-0662f32905ec",
+    "id": 9
   }
 ]
