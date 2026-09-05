@@ -1,2 +1,12 @@
 fish_variables
 fish_history
+
+# pure
+completions/fisher.fish
+conf.d/_pure_init.fish
+conf.d/pure.fish
+functions/_pure_*.fish
+functions/fish_mode_prompt.fish
+functions/fish_prompt.fish
+functions/fish_title.fish
+
